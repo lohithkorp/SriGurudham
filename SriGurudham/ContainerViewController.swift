@@ -2,7 +2,7 @@
 //  ContainerViewController.swift
 //  SriGurudham
 //
-//  Created by Colruyt Group on 22/06/17.
+//  Created by Lohith Krishna Korupolu on 22/06/17.
 //  Copyright © 2017 Sri Gurudham. All rights reserved.
 //
 
