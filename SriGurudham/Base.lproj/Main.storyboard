@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IJK-eI-qVL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ContainerViewController-->
+        <scene sceneID="qL9-Sd-uiW">
+            <objects>
+                <viewController title="ContainerViewController" id="IJK-eI-qVL" customClass="ContainerViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x8Z-PN-gCb"/>
+                        <viewControllerLayoutGuide type="bottom" id="8F8-pw-0tf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A5g-T5-6gH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auj-Th-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="99"/>
+        </scene>
+        <!--TopViewController-->
+        <scene sceneID="isT-Tk-0ki">
+            <objects>
+                <viewController storyboardIdentifier="topScreen" title="TopViewController" id="whm-rW-Etu" customClass="TopViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Lr-6D-98J"/>
+                        <viewControllerLayoutGuide type="bottom" id="LeL-S3-Nnh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7eu-dI-2Kl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvb-AS-7FV">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showMenuButtonAction:" destination="whm-rW-Etu" eventType="touchUpInside" id="J3D-Xr-ft6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kvb-AS-7FV" firstAttribute="leading" secondItem="7eu-dI-2Kl" secondAttribute="leading" constant="16" id="FFx-MY-T13"/>
+                            <constraint firstItem="kvb-AS-7FV" firstAttribute="top" secondItem="2Lr-6D-98J" secondAttribute="bottom" constant="8" id="NST-Xm-6x0"/>
+                            <constraint firstItem="LeL-S3-Nnh" firstAttribute="top" secondItem="kvb-AS-7FV" secondAttribute="bottom" constant="609" id="b8U-xx-4Ri"/>
+                            <constraint firstAttribute="trailing" secondItem="kvb-AS-7FV" secondAttribute="trailing" constant="313" id="bce-ZM-hXf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asL-kH-aqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="99"/>
+        </scene>
+        <!--SideViewController-->
+        <scene sceneID="KAr-Tu-w1C">
+            <objects>
+                <viewController storyboardIdentifier="leftScreen" title="SideViewController" id="6lF-rg-KSj" customClass="SideViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bh4-1q-iy7"/>
+                        <viewControllerLayoutGuide type="bottom" id="xk5-Dc-GUN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HmR-lZ-GiF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-5w-EAp">
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.44313725490196076" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pXe-5w-EAp" firstAttribute="top" secondItem="bh4-1q-iy7" secondAttribute="bottom" constant="138" id="8NB-Oj-6cN"/>
+                            <constraint firstAttribute="trailing" secondItem="pXe-5w-EAp" secondAttribute="trailing" constant="313" id="H16-uh-Wgb"/>
+                            <constraint firstItem="pXe-5w-EAp" firstAttribute="leading" secondItem="HmR-lZ-GiF" secondAttribute="leadingMargin" id="P3W-Nk-t7B"/>
+                            <constraint firstItem="pXe-5w-EAp" firstAttribute="leading" secondItem="HmR-lZ-GiF" secondAttribute="leading" constant="16" id="gh4-1y-6YS"/>
+                            <constraint firstItem="xk5-Dc-GUN" firstAttribute="top" secondItem="pXe-5w-EAp" secondAttribute="bottom" constant="479" id="lEU-4u-qq8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cW1-t4-N4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="99"/>
+        </scene>
+    </scenes>
+</document>

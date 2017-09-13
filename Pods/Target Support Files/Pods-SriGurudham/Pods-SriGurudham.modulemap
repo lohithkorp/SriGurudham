@@ -1,0 +1,6 @@
+framework module Pods_SriGurudham {
+  umbrella header "Pods-SriGurudham-umbrella.h"
+
+  export *
+  module * { export * }
+}
