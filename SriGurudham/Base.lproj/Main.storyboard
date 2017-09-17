@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -101,20 +100,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXe-5w-EAp">
-                                <rect key="frame" x="16" y="158" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zuz-4z-L4k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pXe-5w-EAp" firstAttribute="top" secondItem="bh4-1q-iy7" secondAttribute="bottom" constant="138" id="8NB-Oj-6cN"/>
-                            <constraint firstAttribute="trailing" secondItem="pXe-5w-EAp" secondAttribute="trailing" constant="313" id="H16-uh-Wgb"/>
-                            <constraint firstItem="pXe-5w-EAp" firstAttribute="leading" secondItem="HmR-lZ-GiF" secondAttribute="leadingMargin" id="P3W-Nk-t7B"/>
-                            <constraint firstItem="pXe-5w-EAp" firstAttribute="leading" secondItem="HmR-lZ-GiF" secondAttribute="leading" constant="16" id="gh4-1y-6YS"/>
-                            <constraint firstItem="xk5-Dc-GUN" firstAttribute="top" secondItem="pXe-5w-EAp" secondAttribute="bottom" constant="479" id="lEU-4u-qq8"/>
+                            <constraint firstItem="zuz-4z-L4k" firstAttribute="top" secondItem="HmR-lZ-GiF" secondAttribute="top" id="8IF-lg-eWn"/>
+                            <constraint firstItem="zuz-4z-L4k" firstAttribute="leading" secondItem="HmR-lZ-GiF" secondAttribute="leading" id="Fsk-ci-suf"/>
+                            <constraint firstItem="zuz-4z-L4k" firstAttribute="centerX" secondItem="HmR-lZ-GiF" secondAttribute="centerX" id="nBv-RB-oKI"/>
+                            <constraint firstItem="xk5-Dc-GUN" firstAttribute="top" secondItem="zuz-4z-L4k" secondAttribute="bottom" id="rdf-gA-s5Z"/>
+                            <constraint firstAttribute="trailing" secondItem="zuz-4z-L4k" secondAttribute="trailing" id="sXb-nO-wY9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sideMenuTableView" destination="zuz-4z-L4k" id="h6m-yp-tSE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW1-t4-N4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

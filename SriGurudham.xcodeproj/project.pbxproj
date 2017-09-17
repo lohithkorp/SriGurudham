@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CAFC733B0A2A13673F13B487 /* Pods_SriGurudham.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C7DE2FC4A3DBCCA3A403EF /* Pods_SriGurudham.framework */; };
+		E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */; };
+		E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */; };
 		E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */; };
 		E53C1FDF1EFBA9E4003D73B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53C1FDD1EFBA9E4003D73B0 /* Main.storyboard */; };
 		E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53C1FE01EFBA9E4003D73B0 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		14C7DE2FC4A3DBCCA3A403EF /* Pods_SriGurudham.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SriGurudham.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F1572780A03F60B020DCF2 /* Pods-SriGurudham.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SriGurudham.release.xcconfig"; path = "Pods/Target Support Files/Pods-SriGurudham/Pods-SriGurudham.release.xcconfig"; sourceTree = "<group>"; };
 		DA4DB00CBF3CAAD00ACCE6DB /* Pods-SriGurudham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SriGurudham.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SriGurudham/Pods-SriGurudham.debug.xcconfig"; sourceTree = "<group>"; };
+		E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		E53C1FD61EFBA9E3003D73B0 /* SriGurudham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SriGurudham.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E53C1FDE1EFBA9E4003D73B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E20E66AE1F6EC00E00FB526D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */,
+				E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		E53C1FCD1EFBA9E3003D73B0 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		E53C1FD81EFBA9E4003D73B0 /* SriGurudham */ = {
 			isa = PBXGroup;
 			children = (
+				E20E66AE1F6EC00E00FB526D /* Views */,
 				E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */,
 				E53C1FDD1EFBA9E4003D73B0 /* Main.storyboard */,
 				E53C1FE01EFBA9E4003D73B0 /* Assets.xcassets */,
@@ -160,6 +174,7 @@
 				E53C1FE41EFBA9E4003D73B0 /* LaunchScreen.storyboard in Resources */,
 				E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */,
 				E53C1FDF1EFBA9E4003D73B0 /* Main.storyboard in Resources */,
+				E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53C1FF31EFBF817003D73B0 /* TopViewController.swift in Sources */,
+				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,
