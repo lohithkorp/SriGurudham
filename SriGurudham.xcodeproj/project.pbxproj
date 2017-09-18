@@ -10,6 +10,10 @@
 		CAFC733B0A2A13673F13B487 /* Pods_SriGurudham.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C7DE2FC4A3DBCCA3A403EF /* Pods_SriGurudham.framework */; };
 		E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */; };
 		E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */; };
+		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
+		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
+		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
+		E2CF4CCC1F7038360035EBEC /* SideMenuCommunicateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CCA1F7038360035EBEC /* SideMenuCommunicateCell.xib */; };
 		E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */; };
 		E53C1FDF1EFBA9E4003D73B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53C1FDD1EFBA9E4003D73B0 /* Main.storyboard */; };
 		E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53C1FE01EFBA9E4003D73B0 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 		DA4DB00CBF3CAAD00ACCE6DB /* Pods-SriGurudham.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SriGurudham.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SriGurudham/Pods-SriGurudham.debug.xcconfig"; sourceTree = "<group>"; };
 		E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
+		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
+		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
+		E2CF4CCA1F7038360035EBEC /* SideMenuCommunicateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCommunicateCell.xib; sourceTree = "<group>"; };
 		E53C1FD61EFBA9E3003D73B0 /* SriGurudham.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SriGurudham.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E53C1FDE1EFBA9E4003D73B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 			children = (
 				E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */,
 				E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */,
+				E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */,
+				E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */,
+				E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */,
+				E2CF4CCA1F7038360035EBEC /* SideMenuCommunicateCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -143,7 +155,7 @@
 				TargetAttributes = {
 					E53C1FD51EFBA9E3003D73B0 = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -174,7 +186,9 @@
 				E53C1FE41EFBA9E4003D73B0 /* LaunchScreen.storyboard in Resources */,
 				E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */,
 				E53C1FDF1EFBA9E4003D73B0 /* Main.storyboard in Resources */,
+				E2CF4CCC1F7038360035EBEC /* SideMenuCommunicateCell.xib in Resources */,
 				E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */,
+				E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +251,9 @@
 				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
+				E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,
+				E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +377,13 @@
 			baseConfigurationReference = DA4DB00CBF3CAAD00ACCE6DB /* Pods-SriGurudham.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SriGurudham/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sgect.SriGurudham;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -375,6 +393,7 @@
 			baseConfigurationReference = 82F1572780A03F60B020DCF2 /* Pods-SriGurudham.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SriGurudham/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

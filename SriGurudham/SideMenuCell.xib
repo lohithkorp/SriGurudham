@@ -31,8 +31,8 @@
                             <constraint firstAttribute="height" constant="21" id="b8c-UV-ojo"/>
                             <constraint firstAttribute="width" constant="277" id="qq5-MC-QVl"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" red="0.43428448932926833" green="0.072958242687037017" blue="0.10106527808903423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -44,11 +44,12 @@
                     <constraint firstAttribute="bottom" secondItem="aPm-pZ-h0h" secondAttribute="bottom" constant="11" id="n3B-9g-2Sg"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="menuItemIcon" destination="1WS-x6-gK8" id="bD8-Ii-5hD"/>
                 <outlet property="menuItemLabel" destination="aPm-pZ-h0h" id="D8r-77-sCB"/>
             </connections>
-            <point key="canvasLocation" x="40" y="-3"/>
+            <point key="canvasLocation" x="39.5" y="-3"/>
         </tableViewCell>
     </objects>
 </document>

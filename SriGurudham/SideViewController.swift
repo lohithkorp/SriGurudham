@@ -10,7 +10,8 @@ import UIKit
 
 class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let sideMenuItemList = ["Item1", "Item2", "Item3", "Item4", "Item5"]
+    let sideMenuItemList = ["Home", "Guruvugaru", "Schedule", "Audios", "Videos", "Photos", "Articles", "Services", "Contact Us"]
+    var cell:UITableViewCell!
 
     @IBOutlet weak var sideMenuTableView: UITableView!
     override func viewDidLoad() {
@@ -22,7 +23,12 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
         let sideMenuCellNib = UINib(nibName: "SideMenuCell", bundle: nil)
         sideMenuTableView.register(sideMenuCellNib, forCellReuseIdentifier: "SideMenuCell")
         
-        // Do any additional setup after loading the view.
+        let sideMenuImageCellNib = UINib(nibName: "SideMenuImageCell", bundle: nil)
+        sideMenuTableView.register(sideMenuImageCellNib, forCellReuseIdentifier: "SideMenuImageCell")
+        
+        let sideMenuCommunicateCell = UINib(nibName: "SideMenuCommunicateCell", bundle: nil)
+        sideMenuTableView.register(sideMenuCommunicateCell, forCellReuseIdentifier: "SideMenuCommunicateCell")
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -38,16 +44,55 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 2:
             return 2
         default:
-            return 1
+            return 0
+        }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return 100.0
+            
+        case 1:
+            return 44.0
+            
+        case 2:
+            return 50.0
+            
+        default:
+            return 44.0
+        
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
         
-        cell.menuItemLabel.text = sideMenuItemList[0]
+        switch indexPath.section {
+        case 0:
+            let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuImageCell") as! SideMenuImageCell
+            
+            return cell
+            
+        case 1:
+            let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
+            
+//            for i in 0..<sideMenuItemList.count {
+//                cell.menuItemLabel.text = sideMenuItemList[i]
+//            }
+            
+            cell.menuItemLabel.text = sideMenuItemList[indexPath.row]
+            
+            return cell
         
-        return cell
+        case 2:
+            let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCommunicateCell") as! SideMenuCommunicateCell
+            
+            return cell
+            
+        default:
+            return cell
+       
+        }
     }
 }
 
