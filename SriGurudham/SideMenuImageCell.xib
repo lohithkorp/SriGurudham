@@ -11,29 +11,55 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SideMenuImageCell" selectionStyle="default" indentationWidth="10" id="3pG-xx-yaq" customClass="SideMenuImageCell" customModule="SriGurudham" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SideMenuImageCell" selectionStyle="default" indentationWidth="10" rowHeight="220" id="3pG-xx-yaq" customClass="SideMenuImageCell" customModule="SriGurudham" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3pG-xx-yaq" id="xUE-TR-vVs">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SriGurujiImage" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-nR-hjn">
-                        <rect key="frame" x="8" y="3" width="359" height="93.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sideMenuBgImage" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-QO-9Z4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="219.5"/>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SriGurujiImage" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-gx-QT0">
+                        <rect key="frame" x="7" y="8" width="360" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="98" id="3ub-Ng-d1F"/>
+                            <constraint firstAttribute="width" constant="360" id="Qsa-zh-QeG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-99-6wG">
+                        <rect key="frame" x="8" y="119" width="359" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="94" id="evc-Zi-9hM"/>
+                            <constraint firstAttribute="width" constant="359" id="m8r-CC-W6V"/>
+                        </constraints>
+                        <string key="text">సర్వే సుజనాః సుఖినో భవంతు
+సర్వే జనాః సుజనో భవంతు</string>
+                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="22"/>
+                        <color key="textColor" red="0.98939048387318462" green="1" blue="0.97258915025353321" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="MDP-nR-hjn" secondAttribute="trailing" constant="8" id="Kus-5l-KJY"/>
-                    <constraint firstAttribute="bottom" secondItem="MDP-nR-hjn" secondAttribute="bottom" constant="3" id="SGi-Ok-KnQ"/>
-                    <constraint firstItem="MDP-nR-hjn" firstAttribute="leading" secondItem="xUE-TR-vVs" secondAttribute="leading" constant="8" id="yfT-Ik-BwL"/>
-                    <constraint firstItem="MDP-nR-hjn" firstAttribute="top" secondItem="xUE-TR-vVs" secondAttribute="top" constant="3" id="zHk-p9-QOi"/>
+                    <constraint firstItem="h2d-QO-9Z4" firstAttribute="leading" secondItem="xUE-TR-vVs" secondAttribute="leading" id="I3w-nz-2lp"/>
+                    <constraint firstItem="aGg-99-6wG" firstAttribute="leading" secondItem="xUE-TR-vVs" secondAttribute="leading" constant="8" id="JKQ-oc-08L"/>
+                    <constraint firstItem="aGg-99-6wG" firstAttribute="top" secondItem="lhO-gx-QT0" secondAttribute="bottom" constant="13" id="Lbk-WR-7RT"/>
+                    <constraint firstAttribute="trailing" secondItem="lhO-gx-QT0" secondAttribute="trailing" constant="8" id="Phc-kG-qBz"/>
+                    <constraint firstAttribute="trailing" secondItem="h2d-QO-9Z4" secondAttribute="trailing" id="QQw-EK-70z"/>
+                    <constraint firstAttribute="bottom" secondItem="h2d-QO-9Z4" secondAttribute="bottom" id="Z9a-FP-Gzu"/>
+                    <constraint firstAttribute="trailing" secondItem="aGg-99-6wG" secondAttribute="trailing" constant="8" id="ZWa-qo-soh"/>
+                    <constraint firstItem="h2d-QO-9Z4" firstAttribute="top" secondItem="xUE-TR-vVs" secondAttribute="top" id="dZM-yZ-5ul"/>
+                    <constraint firstItem="lhO-gx-QT0" firstAttribute="leading" secondItem="xUE-TR-vVs" secondAttribute="leading" constant="7" id="ibj-0U-89V"/>
+                    <constraint firstItem="lhO-gx-QT0" firstAttribute="top" secondItem="xUE-TR-vVs" secondAttribute="top" constant="8" id="l6Q-qZ-eWj"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <point key="canvasLocation" x="-73" y="-236"/>
+            <point key="canvasLocation" x="-49.5" y="-302"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="SriGurujiImage" width="847" height="250"/>
+        <image name="sideMenuBgImage" width="1920" height="350"/>
     </resources>
 </document>

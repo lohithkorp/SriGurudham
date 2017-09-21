@@ -11,6 +11,9 @@ import UIKit
 class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let sideMenuItemList = ["Home", "Guruvugaru", "Schedule", "Audios", "Videos", "Photos", "Articles", "Services", "Contact Us"]
+    
+    let sideMenuIconList = ["sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon"]
+    
     var cell:UITableViewCell!
 
     @IBOutlet weak var sideMenuTableView: UITableView!
@@ -51,7 +54,7 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 100.0
+            return 220.0
             
         case 1:
             return 44.0
@@ -81,6 +84,7 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
 //            }
             
             cell.menuItemLabel.text = sideMenuItemList[indexPath.row]
+            cell.menuItemIcon.image = UIImage(named: sideMenuIconList[indexPath.row])
             
             return cell
         
