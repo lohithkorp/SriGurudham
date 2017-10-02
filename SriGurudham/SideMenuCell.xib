@@ -31,7 +31,7 @@
                             <constraint firstAttribute="height" constant="21" id="b8c-UV-ojo"/>
                             <constraint firstAttribute="width" constant="277" id="qq5-MC-QVl"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                         <color key="textColor" red="0.52941176470588236" green="0.094117647058823528" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

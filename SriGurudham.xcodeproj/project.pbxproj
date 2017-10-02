@@ -11,6 +11,7 @@
 		E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */; };
 		E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */; };
 		E284B8C91F820AD400774FE5 /* SideMenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E284B8C81F820AD400774FE5 /* SideMenuSectionHeaderView.xib */; };
+		E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -31,6 +32,7 @@
 		E20E66AF1F6EC04C00FB526D /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		E284B8C81F820AD400774FE5 /* SideMenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuSectionHeaderView.xib; sourceTree = "<group>"; };
+		E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				E53C1FEC1EFBF7A0003D73B0 /* ContainerViewController.swift */,
 				E53C1FF21EFBF817003D73B0 /* TopViewController.swift */,
 				E53C1FF41EFBF855003D73B0 /* SideViewController.swift */,
+				E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */,
 			);
 			path = SriGurudham;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				E53C1FF31EFBF817003D73B0 /* TopViewController.swift in Sources */,
 				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
+				E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
 				E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -121,6 +122,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW1-t4-N4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1410" y="99"/>
+        </scene>
+        <!--HomeViewController-->
+        <scene sceneID="ec5-Kb-uxv">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="qvI-cU-00W" customClass="HomeViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="moU-Jf-gni"/>
+                        <viewControllerLayoutGuide type="bottom" id="0MV-Ul-EBT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FbH-Bt-3GR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UOs-pC-lCP">
+                                <rect key="frame" x="0.0" y="109" width="375" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="i7E-j0-U5g"/>
+                                    <constraint firstAttribute="height" constant="202" id="mZA-Kk-OP1"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obi-ZU-4RK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3J-ql-XTh">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="TxE-5P-bu8"/>
+                                            <constraint firstAttribute="width" constant="29" id="lwG-dB-Rn4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="qvI-cU-00W" eventType="touchUpInside" id="awm-MU-WV9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-Ug-6Rw">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Enr-zV-ZzJ"/>
+                                            <constraint firstAttribute="width" constant="174" id="Nyy-Hz-kIy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="O3Z-lC-R3I"/>
+                                    <constraint firstItem="U3J-ql-XTh" firstAttribute="leading" secondItem="obi-ZU-4RK" secondAttribute="leading" constant="8" id="nkJ-MR-Oka"/>
+                                    <constraint firstAttribute="width" constant="375" id="qVN-qp-KcZ"/>
+                                    <constraint firstItem="e2h-Ug-6Rw" firstAttribute="centerY" secondItem="obi-ZU-4RK" secondAttribute="centerY" id="ua4-lM-oGT"/>
+                                    <constraint firstItem="U3J-ql-XTh" firstAttribute="centerY" secondItem="obi-ZU-4RK" secondAttribute="centerY" id="ut0-dN-7UT"/>
+                                    <constraint firstItem="e2h-Ug-6Rw" firstAttribute="leading" secondItem="U3J-ql-XTh" secondAttribute="trailing" constant="31" id="woR-rq-2IJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihk-sL-rtf">
+                                <rect key="frame" x="24" y="80" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TlU-Gu-Zov"/>
+                                    <constraint firstAttribute="width" constant="300" id="gee-uh-rhJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.094117647058823528" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Announcements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08i-Ug-WSN">
+                                <rect key="frame" x="16" y="323" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="eCx-6c-imd"/>
+                                    <constraint firstAttribute="height" constant="21" id="fvv-dx-dah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRv-zg-DqU">
+                                <rect key="frame" x="16" y="352" width="343" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDS-Lg-iOz">
+                                        <rect key="frame" x="0.0" y="7" width="335" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="05z-xP-eoe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <color key="textColor" red="0.98939048389999995" green="1" blue="0.97258915030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.42352941176470588" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5Yt-ad-mJ0"/>
+                                    <constraint firstAttribute="height" constant="36" id="G1J-bb-0B2"/>
+                                    <constraint firstItem="UDS-Lg-iOz" firstAttribute="leading" secondItem="pRv-zg-DqU" secondAttribute="leading" id="LM5-g1-ytP"/>
+                                    <constraint firstAttribute="trailing" secondItem="UDS-Lg-iOz" secondAttribute="trailing" constant="8" id="MjB-KA-xIC"/>
+                                    <constraint firstItem="UDS-Lg-iOz" firstAttribute="top" secondItem="pRv-zg-DqU" secondAttribute="top" constant="7" id="YxZ-u9-p74"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="obi-ZU-4RK" secondAttribute="trailing" id="9ND-Mx-Paq"/>
+                            <constraint firstItem="UOs-pC-lCP" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" id="BGD-XQ-sgV"/>
+                            <constraint firstItem="obi-ZU-4RK" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="QHD-7B-qjh"/>
+                            <constraint firstItem="pRv-zg-DqU" firstAttribute="top" secondItem="08i-Ug-WSN" secondAttribute="bottom" constant="8" id="RTo-cn-HMD"/>
+                            <constraint firstItem="08i-Ug-WSN" firstAttribute="top" secondItem="UOs-pC-lCP" secondAttribute="bottom" constant="12" id="RnJ-sW-gtC"/>
+                            <constraint firstItem="UOs-pC-lCP" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="T3w-A8-cm8"/>
+                            <constraint firstItem="ihk-sL-rtf" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leadingMargin" constant="8" id="T8f-8s-Ywk"/>
+                            <constraint firstItem="08i-Ug-WSN" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" constant="16" id="VpX-hD-gal"/>
+                            <constraint firstItem="pRv-zg-DqU" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" constant="16" id="bD6-Iz-qqe"/>
+                            <constraint firstItem="obi-ZU-4RK" firstAttribute="top" secondItem="moU-Jf-gni" secondAttribute="bottom" id="ckn-4I-kDL"/>
+                            <constraint firstItem="ihk-sL-rtf" firstAttribute="top" secondItem="obi-ZU-4RK" secondAttribute="bottom" constant="8" id="hDc-fH-i0x"/>
+                            <constraint firstAttribute="trailing" secondItem="pRv-zg-DqU" secondAttribute="trailing" constant="16" id="k0t-Ha-lIb"/>
+                            <constraint firstItem="UOs-pC-lCP" firstAttribute="top" secondItem="ihk-sL-rtf" secondAttribute="bottom" constant="8" id="uok-BV-ESF"/>
+                            <constraint firstAttribute="trailing" secondItem="UOs-pC-lCP" secondAttribute="trailing" id="wSE-zv-rVD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="announcementsLabel" destination="UDS-Lg-iOz" id="B5H-dZ-TI2"/>
+                        <outlet property="gurujiImageView" destination="UOs-pC-lCP" id="qB6-Tm-yfu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFz-Vv-Gg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773.5999999999999" y="-0.44977511244377816"/>
         </scene>
     </scenes>
     <resources>

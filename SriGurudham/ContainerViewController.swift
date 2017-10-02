@@ -15,7 +15,7 @@ class ContainerViewController: SOContainerViewController {
         super.viewDidLoad()
 
         self.menuSide = .left
-        self.topViewController = self.storyboard?.instantiateViewController(withIdentifier: "topScreen")
+        self.topViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
         self.sideViewController = self.storyboard?.instantiateViewController(withIdentifier: "leftScreen")
     }
     

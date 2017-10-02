@@ -19,6 +19,8 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
     let sideMenuCommunicationIconList = ["sideMenuShareIcon", "sideMenuFeedbackIcon"]
     
     var cell:UITableViewCell!
+    
+    let myStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     @IBOutlet weak var sideMenuTableView: UITableView!
     override func viewDidLoad() {
@@ -109,5 +111,25 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
        
         }
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            break
+        case 1:
+            switch indexPath.row {
+            case 0:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
+            default:
+                break
+            }
+            
+            self.so_containerViewController?.isSideViewControllerPresented = false
+            
+        default:
+            break
+        }
+    }
+
 }
 
