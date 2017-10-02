@@ -12,7 +12,11 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let sideMenuItemList = ["Home", "Guruvugaru", "Schedule", "Audios", "Videos", "Photos", "Articles", "Services", "Contact Us"]
     
-    let sideMenuIconList = ["sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon", "sideMenuHomeIcon"]
+    let sideMenuCommunicationList = ["Share", "Feedback"]
+    
+    let sideMenuIconList = ["sideMenuHomeIcon", "sideMenuOmIcon", "sideMenuScheduleIcon", "sideMenuAudiosIcon", "sideMenuVideosIcon", "sideMenuPhotosIcon", "sideMenuArticlesIcon", "sideMenuServicesIcon", "sideMenuContactIcon"]
+    
+    let sideMenuCommunicationIconList = ["sideMenuShareIcon", "sideMenuFeedbackIcon"]
     
     var cell:UITableViewCell!
 
@@ -68,6 +72,15 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 2:
+            return "Communication"
+        default:
+            return ""
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         switch indexPath.section {
@@ -79,18 +92,16 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 1:
             let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
             
-//            for i in 0..<sideMenuItemList.count {
-//                cell.menuItemLabel.text = sideMenuItemList[i]
-//            }
-            
             cell.menuItemLabel.text = sideMenuItemList[indexPath.row]
             cell.menuItemIcon.image = UIImage(named: sideMenuIconList[indexPath.row])
             
             return cell
         
         case 2:
-            let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCommunicateCell") as! SideMenuCommunicateCell
+            let cell = self.sideMenuTableView.dequeueReusableCell(withIdentifier: "SideMenuCell") as! SideMenuCell
             
+            cell.menuItemLabel.text = sideMenuCommunicationList[indexPath.row]
+            cell.menuItemIcon.image = UIImage(named: sideMenuCommunicationIconList[indexPath.row])
             return cell
             
         default:
