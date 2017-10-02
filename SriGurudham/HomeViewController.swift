@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var announcementsLabel: UILabel!
     @IBOutlet weak var gurujiImageView: UIImageView!
     
+    @IBOutlet weak var quotationLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,6 +31,47 @@ class HomeViewController: UIViewController {
             self.announcementsLabel.center = CGPoint(x: 0 - self.announcementsLabel.bounds.size.width / 2, y: self.announcementsLabel.center.y)
         }, completion:  { _ in })
         
+        if let url = URL(string: "http://srigurudham.org") {
+            do {
+                let contents = try String(contentsOf: url)
+                
+                do{
+                    let html = contents
+                    let doc: Document = try SwiftSoup.parse(html)
+                    quotationLabel.text = try doc.getElementsByClass("ntr").text()
+                }catch Exception.Error(let type, let message){
+                    print(message)
+                }catch{
+                    print("error")
+                }
+
+            } catch {
+                print("could not load")
+            }
+        } else {
+            print("URL was bad")
+        }
+        
+        if let url = URL(string: "http://srigurudham.org/schedule") {
+            do {
+                let contents = try String(contentsOf: url)
+                
+                do{
+                    let html = contents
+                    let doc: Document = try SwiftSoup.parse(html)
+                    announcementsLabel.text = try doc.getElementsByClass("inside").text()
+                }catch Exception.Error(let type, let message){
+                    print(message)
+                }catch{
+                    print("error")
+                }
+                
+            } catch {
+                print("could not load")
+            }
+        } else {
+            print("URL was bad")
+        }
     }
 
     @IBAction func sideMenuButtonAction(_ sender: Any) {

@@ -12,6 +12,7 @@ target 'SriGurudham' do
     
     #pod 'SideMenu'
     
-    pod 'SidebarOverlay', '~> 3.0.0'
+	pod 'SidebarOverlay', '~> 3.0.0'
+	pod 'SwiftSoup'
     
 end

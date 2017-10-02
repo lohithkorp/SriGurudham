@@ -219,10 +219,34 @@
                                     <constraint firstItem="UDS-Lg-iOz" firstAttribute="top" secondItem="pRv-zg-DqU" secondAttribute="top" constant="7" id="YxZ-u9-p74"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nu6-d4-vKQ">
+                                <rect key="frame" x="16" y="396" width="343" height="263"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbm-mA-jOc">
+                                        <rect key="frame" x="24" y="8" width="295" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="295" id="SGL-y4-U0d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                        <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Wj8-ey-OSs"/>
+                                    <constraint firstAttribute="height" constant="263" id="Z9z-lp-tVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbm-mA-jOc" secondAttribute="trailing" constant="24" id="c24-KR-y8O"/>
+                                    <constraint firstItem="cbm-mA-jOc" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="top" constant="8" id="dhJ-Bz-Dhp"/>
+                                    <constraint firstItem="cbm-mA-jOc" firstAttribute="leading" secondItem="nu6-d4-vKQ" secondAttribute="leading" constant="24" id="jNJ-B6-mWG"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbm-mA-jOc" secondAttribute="bottom" constant="8" id="v4f-qo-qDy"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="obi-ZU-4RK" secondAttribute="trailing" id="9ND-Mx-Paq"/>
+                            <constraint firstItem="0MV-Ul-EBT" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="bottom" constant="8" id="B6a-mA-dvG"/>
                             <constraint firstItem="UOs-pC-lCP" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" id="BGD-XQ-sgV"/>
                             <constraint firstItem="obi-ZU-4RK" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="QHD-7B-qjh"/>
                             <constraint firstItem="pRv-zg-DqU" firstAttribute="top" secondItem="08i-Ug-WSN" secondAttribute="bottom" constant="8" id="RTo-cn-HMD"/>
@@ -230,10 +254,12 @@
                             <constraint firstItem="UOs-pC-lCP" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="T3w-A8-cm8"/>
                             <constraint firstItem="ihk-sL-rtf" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leadingMargin" constant="8" id="T8f-8s-Ywk"/>
                             <constraint firstItem="08i-Ug-WSN" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" constant="16" id="VpX-hD-gal"/>
+                            <constraint firstItem="nu6-d4-vKQ" firstAttribute="top" secondItem="pRv-zg-DqU" secondAttribute="bottom" constant="8" id="Zsc-6e-jyW"/>
                             <constraint firstItem="pRv-zg-DqU" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" constant="16" id="bD6-Iz-qqe"/>
                             <constraint firstItem="obi-ZU-4RK" firstAttribute="top" secondItem="moU-Jf-gni" secondAttribute="bottom" id="ckn-4I-kDL"/>
                             <constraint firstItem="ihk-sL-rtf" firstAttribute="top" secondItem="obi-ZU-4RK" secondAttribute="bottom" constant="8" id="hDc-fH-i0x"/>
                             <constraint firstAttribute="trailing" secondItem="pRv-zg-DqU" secondAttribute="trailing" constant="16" id="k0t-Ha-lIb"/>
+                            <constraint firstItem="nu6-d4-vKQ" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="u7e-oB-kz1"/>
                             <constraint firstItem="UOs-pC-lCP" firstAttribute="top" secondItem="ihk-sL-rtf" secondAttribute="bottom" constant="8" id="uok-BV-ESF"/>
                             <constraint firstAttribute="trailing" secondItem="UOs-pC-lCP" secondAttribute="trailing" id="wSE-zv-rVD"/>
                         </constraints>
@@ -241,6 +267,7 @@
                     <connections>
                         <outlet property="announcementsLabel" destination="UDS-Lg-iOz" id="B5H-dZ-TI2"/>
                         <outlet property="gurujiImageView" destination="UOs-pC-lCP" id="qB6-Tm-yfu"/>
+                        <outlet property="quotationLabel" destination="cbm-mA-jOc" id="bVd-eC-BbL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFz-Vv-Gg4" userLabel="First Responder" sceneMemberID="firstResponder"/>

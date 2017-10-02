@@ -1,12 +1,15 @@
 PODS:
   - SidebarOverlay (3.0.0)
+  - SwiftSoup (1.4.2)
 
 DEPENDENCIES:
   - SidebarOverlay (~> 3.0.0)
+  - SwiftSoup
 
 SPEC CHECKSUMS:
   SidebarOverlay: ac775b6c3371963746da17610f49f44e2ea1d64e
+  SwiftSoup: 9638363718859b469c3d7877b2b6a640348bacb7
 
-PODFILE CHECKSUM: 4b7e42bc23aad665e1aa4503dc36152a76362100
+PODFILE CHECKSUM: 5e653a794fd2378df1390908dfde689acab01bda
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.3.1
