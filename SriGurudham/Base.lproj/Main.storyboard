@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gurajada.ttf">
+            <string>Gurajada</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--ContainerViewController-->
         <scene sceneID="qL9-Sd-uiW">
@@ -205,7 +210,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="05z-xP-eoe"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Gurajada" family="Gurajada" pointSize="17"/>
                                         <color key="textColor" red="0.98939048389999995" green="1" blue="0.97258915030000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -220,14 +225,14 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nu6-d4-vKQ">
-                                <rect key="frame" x="16" y="396" width="343" height="263"/>
+                                <rect key="frame" x="16" y="396" width="343" height="251"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbm-mA-jOc">
-                                        <rect key="frame" x="24" y="8" width="295" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbm-mA-jOc">
+                                        <rect key="frame" x="8" y="8" width="327" height="29.5"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="295" id="SGL-y4-U0d"/>
+                                            <constraint firstAttribute="width" constant="327" id="SGL-y4-U0d"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Gurajada" family="Gurajada" pointSize="18"/>
                                         <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -235,20 +240,21 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Wj8-ey-OSs"/>
-                                    <constraint firstAttribute="height" constant="263" id="Z9z-lp-tVh"/>
-                                    <constraint firstAttribute="trailing" secondItem="cbm-mA-jOc" secondAttribute="trailing" constant="24" id="c24-KR-y8O"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="263" id="Z9z-lp-tVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbm-mA-jOc" secondAttribute="trailing" constant="8" id="c24-KR-y8O"/>
                                     <constraint firstItem="cbm-mA-jOc" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="top" constant="8" id="dhJ-Bz-Dhp"/>
-                                    <constraint firstItem="cbm-mA-jOc" firstAttribute="leading" secondItem="nu6-d4-vKQ" secondAttribute="leading" constant="24" id="jNJ-B6-mWG"/>
-                                    <constraint firstAttribute="bottom" secondItem="cbm-mA-jOc" secondAttribute="bottom" constant="8" id="v4f-qo-qDy"/>
+                                    <constraint firstItem="cbm-mA-jOc" firstAttribute="leading" secondItem="nu6-d4-vKQ" secondAttribute="leading" constant="8" id="jNJ-B6-mWG"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbm-mA-jOc" secondAttribute="bottom" constant="216.5" id="v4f-qo-qDy"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="obi-ZU-4RK" secondAttribute="trailing" id="9ND-Mx-Paq"/>
-                            <constraint firstItem="0MV-Ul-EBT" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="bottom" constant="8" id="B6a-mA-dvG"/>
+                            <constraint firstItem="0MV-Ul-EBT" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="bottom" constant="20" id="B6a-mA-dvG"/>
                             <constraint firstItem="UOs-pC-lCP" firstAttribute="leading" secondItem="FbH-Bt-3GR" secondAttribute="leading" id="BGD-XQ-sgV"/>
                             <constraint firstItem="obi-ZU-4RK" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="QHD-7B-qjh"/>
+                            <constraint firstItem="nu6-d4-vKQ" firstAttribute="leading" secondItem="UDS-Lg-iOz" secondAttribute="leading" id="QTP-dc-hZU"/>
                             <constraint firstItem="pRv-zg-DqU" firstAttribute="top" secondItem="08i-Ug-WSN" secondAttribute="bottom" constant="8" id="RTo-cn-HMD"/>
                             <constraint firstItem="08i-Ug-WSN" firstAttribute="top" secondItem="UOs-pC-lCP" secondAttribute="bottom" constant="12" id="RnJ-sW-gtC"/>
                             <constraint firstItem="UOs-pC-lCP" firstAttribute="centerX" secondItem="FbH-Bt-3GR" secondAttribute="centerX" id="T3w-A8-cm8"/>

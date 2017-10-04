@@ -12,6 +12,8 @@
 		E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */; };
 		E284B8C91F820AD400774FE5 /* SideMenuSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E284B8C81F820AD400774FE5 /* SideMenuSectionHeaderView.xib */; };
 		E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */; };
+		E284B8CE1F8514C300774FE5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8CD1F8514C300774FE5 /* UIViewControllerExtension.swift */; };
+		E284B8D11F851ED500774FE5 /* Gurajada.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E284B8D01F851EC500774FE5 /* Gurajada.ttf */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -33,6 +35,8 @@
 		E20E66B11F6EC09B00FB526D /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		E284B8C81F820AD400774FE5 /* SideMenuSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuSectionHeaderView.xib; sourceTree = "<group>"; };
 		E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E284B8CD1F8514C300774FE5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E284B8D01F851EC500774FE5 /* Gurajada.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gurajada.ttf; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,22 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		E284B8CC1F85148300774FE5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E284B8CD1F8514C300774FE5 /* UIViewControllerExtension.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		E284B8CF1F851EAD00774FE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E284B8D01F851EC500774FE5 /* Gurajada.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		E53C1FCD1EFBA9E3003D73B0 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +132,8 @@
 		E53C1FD81EFBA9E4003D73B0 /* SriGurudham */ = {
 			isa = PBXGroup;
 			children = (
+				E284B8CF1F851EAD00774FE5 /* Fonts */,
+				E284B8CC1F85148300774FE5 /* Common */,
 				E20E66AE1F6EC00E00FB526D /* Views */,
 				E53C1FD91EFBA9E4003D73B0 /* AppDelegate.swift */,
 				E53C1FDD1EFBA9E4003D73B0 /* Main.storyboard */,
@@ -189,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E284B8D11F851ED500774FE5 /* Gurajada.ttf in Resources */,
 				E284B8C91F820AD400774FE5 /* SideMenuSectionHeaderView.xib in Resources */,
 				E53C1FE41EFBA9E4003D73B0 /* LaunchScreen.storyboard in Resources */,
 				E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */,
@@ -264,6 +287,7 @@
 			files = (
 				E53C1FF31EFBF817003D73B0 /* TopViewController.swift in Sources */,
 				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
+				E284B8CE1F8514C300774FE5 /* UIViewControllerExtension.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
 				E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
