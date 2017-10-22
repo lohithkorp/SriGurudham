@@ -22,7 +22,7 @@ extension UIViewController {
                 do{
                     let html = contents
                     let doc: Document = try SwiftSoup.parse(html)
-                    receivedTextData = try doc.getElementsByClass(classId).text()
+                    receivedTextData = try doc.getElementsByClass(classId).tagName("h").text()
                     
                     if let receivedTextData = receivedTextData {
                         UserDefaults.standard.setValue(receivedTextData, forKey: classId)
@@ -42,9 +42,8 @@ extension UIViewController {
                 }
                 
             } catch {
-                print("could not load")
-                let cachedTextData = UserDefaults.standard.string(forKey: classId)
-                return cachedTextData!
+                //TODO:- ALERT saying could not reach servers!
+                return ""
             }
         }
         

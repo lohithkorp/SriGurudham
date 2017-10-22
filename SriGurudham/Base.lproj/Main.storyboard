@@ -239,7 +239,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="Wj8-ey-OSs"/>
+                                    <constraint firstItem="cbm-mA-jOc" firstAttribute="centerX" secondItem="nu6-d4-vKQ" secondAttribute="centerX" id="GzV-eT-KdA"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="263" id="Z9z-lp-tVh"/>
                                     <constraint firstAttribute="trailing" secondItem="cbm-mA-jOc" secondAttribute="trailing" constant="8" id="c24-KR-y8O"/>
                                     <constraint firstItem="cbm-mA-jOc" firstAttribute="top" secondItem="nu6-d4-vKQ" secondAttribute="top" constant="8" id="dhJ-Bz-Dhp"/>
@@ -280,8 +280,151 @@
             </objects>
             <point key="canvasLocation" x="2773.5999999999999" y="-0.44977511244377816"/>
         </scene>
+        <!--GuruvuGaruViewController-->
+        <scene sceneID="g1M-Yg-h1S">
+            <objects>
+                <viewController restorationIdentifier="GuruvuGaruViewController" storyboardIdentifier="GuruvuGaruViewController" title="GuruvuGaruViewController" id="Gzo-gW-kub" customClass="GuruvuGaruViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vgo-i1-ZAC"/>
+                        <viewControllerLayoutGuide type="bottom" id="VAY-Q2-UOG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RYD-Zn-MKL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QzQ-z8-hHA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-tr-8e1">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="fRr-Yb-NBe"/>
+                                            <constraint firstAttribute="width" constant="29" id="vMn-Xc-UlS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="Gzo-gW-kub" eventType="touchUpInside" id="BXY-ed-rvz"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dV-M6-3br">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="m6l-0J-05l"/>
+                                            <constraint firstAttribute="height" constant="21" id="opJ-LE-6Mn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="k4H-tr-8e1" firstAttribute="leading" secondItem="QzQ-z8-hHA" secondAttribute="leading" constant="8" id="8Ew-tG-KIc"/>
+                                    <constraint firstItem="1dV-M6-3br" firstAttribute="leading" secondItem="k4H-tr-8e1" secondAttribute="trailing" constant="31" id="9qU-fA-LCL"/>
+                                    <constraint firstAttribute="height" constant="52" id="E2U-fo-Q3e"/>
+                                    <constraint firstItem="k4H-tr-8e1" firstAttribute="centerY" secondItem="QzQ-z8-hHA" secondAttribute="centerY" id="Oh1-x9-zAu"/>
+                                    <constraint firstAttribute="width" constant="375" id="q2b-UI-Nwv"/>
+                                    <constraint firstItem="1dV-M6-3br" firstAttribute="centerY" secondItem="QzQ-z8-hHA" secondAttribute="centerY" id="x1R-XZ-gmk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guruvugaru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QR-Da-dRp">
+                                <rect key="frame" x="24" y="80" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9cR-yC-yzO"/>
+                                    <constraint firstAttribute="width" constant="300" id="Qmv-U8-ph2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God as Man and Man as God" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n89-Gi-gyY">
+                                <rect key="frame" x="24" y="109" width="300" height="18"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxN-PX-zWY">
+                                <rect key="frame" x="8" y="139" width="359" height="201"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutGuruvugaru" translatesAutoresizingMaskIntoConstraints="NO" id="Rew-tQ-NkN">
+                                        <rect key="frame" x="8" y="38" width="134" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="124" id="Dt3-3x-FJq"/>
+                                            <constraint firstAttribute="width" constant="134" id="lrQ-UZ-CEr"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSK-Oq-Vz7">
+                                        <rect key="frame" x="150" y="13" width="201" height="174"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="vVu-U1-xdk"/>
+                                            <constraint firstAttribute="height" constant="174" id="yx1-Wb-DCN"/>
+                                        </constraints>
+                                        <string key="text">Satguru Sri Sivananda Murty is a spiritual master and mentor par excellence. Lord Sri Rama lived the life of an ideal human being. His exemplary life throws light on various facets of human existence and guides humanity as regards an ideal son, citizen, husband, ruler ; even an ideal opponent or adversary.</string>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Rew-tQ-NkN" firstAttribute="top" secondItem="RxN-PX-zWY" secondAttribute="top" constant="38" id="fYB-TO-ckc"/>
+                                    <constraint firstAttribute="height" constant="201" id="lnE-1e-SsC"/>
+                                    <constraint firstItem="JSK-Oq-Vz7" firstAttribute="leading" secondItem="Rew-tQ-NkN" secondAttribute="trailing" constant="8" id="uau-5K-k2F"/>
+                                    <constraint firstItem="JSK-Oq-Vz7" firstAttribute="top" secondItem="RxN-PX-zWY" secondAttribute="top" constant="13" id="vmE-Ym-lCU"/>
+                                    <constraint firstAttribute="trailing" secondItem="JSK-Oq-Vz7" secondAttribute="trailing" constant="8" id="wim-MQ-RhJ"/>
+                                    <constraint firstItem="Rew-tQ-NkN" firstAttribute="leading" secondItem="RxN-PX-zWY" secondAttribute="leading" constant="8" id="zIC-KW-Sqr"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-LD-evM">
+                                <rect key="frame" x="8" y="348" width="359" height="311"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-rf-Pbd">
+                                        <rect key="frame" x="8" y="8" width="343" height="553.5"/>
+                                        <mutableString key="text">Satguru Sri Sivananda Murty is a spiritual master and mentor par excellence. Lord Sri Rama lived the life of an ideal human being. His exemplary life throws light on various facets of human existence and guides humanity as regards an ideal son, citizen, husband, ruler ; even an ideal opponent or adversary. Lord Sri Krishna gave us the philosophical basis for such a life, covering various aspects relating to Gyana, Moksha, Bhakti, Yoga, Karma etc. As Sri Rama, the Lord showed us how to be, by practically living such a life; while as Sri Krishna, He gave us the theoretical underpinning for it. Satguru Sri Sivananda Murty is a rare and unique combination of the theory and practice of Sanathana Dharma, where the ideal and blemishless life of Lord Sri Rama, i.e. God as man, is blended perfectly with the highest mystic state of spiritual excellence of Lord Sri Krishna, i.e. man as God, in a seamless union of the human and the superhuman.
+
+Unless there is an unbound consciousness to tell the bound Jivatma what its true nature is, the Jiva will be ignorant of it, without a goal and deprived of a final purpose of existence. Satguru Sri Sivananda Murty is that unbound consciousness which shows the goal, lending meaning and purpose to the Jivatma’s evolution in the direction of that goal, while simultaneously facilitating the movement towards the goal. The ultimate goal is the unmanifest original which is unqualified and eternal, called variously as Brahman, Self, Truth, Nirguna or God. </mutableString>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rtk-rf-Pbd" secondAttribute="trailing" constant="8" id="7XZ-N2-mXj"/>
+                                    <constraint firstAttribute="bottom" secondItem="rtk-rf-Pbd" secondAttribute="bottom" constant="8" id="FMe-yk-Oo2"/>
+                                    <constraint firstItem="rtk-rf-Pbd" firstAttribute="centerX" secondItem="Nip-LD-evM" secondAttribute="centerX" id="Tj9-fw-m2N"/>
+                                    <constraint firstItem="rtk-rf-Pbd" firstAttribute="top" secondItem="Nip-LD-evM" secondAttribute="top" constant="8" id="dyz-7Y-D5M"/>
+                                    <constraint firstItem="rtk-rf-Pbd" firstAttribute="leading" secondItem="Nip-LD-evM" secondAttribute="leading" constant="8" id="rse-CX-ZDh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n89-Gi-gyY" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leadingMargin" constant="8" id="AU6-BS-oaI"/>
+                            <constraint firstItem="RxN-PX-zWY" firstAttribute="centerX" secondItem="RYD-Zn-MKL" secondAttribute="centerX" id="ArE-pk-KX5"/>
+                            <constraint firstItem="RxN-PX-zWY" firstAttribute="top" secondItem="n89-Gi-gyY" secondAttribute="bottom" constant="12" id="Egg-jv-BDw"/>
+                            <constraint firstItem="n89-Gi-gyY" firstAttribute="top" secondItem="6QR-Da-dRp" secondAttribute="bottom" constant="8" id="FBD-fc-ais"/>
+                            <constraint firstAttribute="trailing" secondItem="QzQ-z8-hHA" secondAttribute="trailing" id="Hq8-HH-dXp"/>
+                            <constraint firstItem="VAY-Q2-UOG" firstAttribute="top" secondItem="Nip-LD-evM" secondAttribute="bottom" constant="8" id="Iix-eQ-XXh"/>
+                            <constraint firstAttribute="trailing" secondItem="Nip-LD-evM" secondAttribute="trailing" constant="8" id="Pwf-MU-4be"/>
+                            <constraint firstAttribute="trailing" secondItem="RxN-PX-zWY" secondAttribute="trailing" constant="8" id="Qc1-Uj-Q1x"/>
+                            <constraint firstItem="Nip-LD-evM" firstAttribute="top" secondItem="RxN-PX-zWY" secondAttribute="bottom" constant="8" id="WKq-5Q-eDl"/>
+                            <constraint firstItem="6QR-Da-dRp" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leadingMargin" constant="8" id="bYI-dV-hxu"/>
+                            <constraint firstItem="QzQ-z8-hHA" firstAttribute="top" secondItem="vgo-i1-ZAC" secondAttribute="bottom" id="fhM-eM-TJe"/>
+                            <constraint firstItem="Nip-LD-evM" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leading" constant="8" id="gKH-w6-bKv"/>
+                            <constraint firstItem="QzQ-z8-hHA" firstAttribute="centerX" secondItem="RYD-Zn-MKL" secondAttribute="centerX" id="pTE-ql-rp0"/>
+                            <constraint firstItem="6QR-Da-dRp" firstAttribute="top" secondItem="QzQ-z8-hHA" secondAttribute="bottom" constant="8" id="pf4-38-iWe"/>
+                            <constraint firstItem="RxN-PX-zWY" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leading" constant="8" id="uGE-Gu-b8s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n89-Gi-gyY" secondAttribute="trailing" constant="35" id="uXE-Ea-QyS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALx-YH-5wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3460" y="-0.44977511244377816"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="AboutGuruvugaru" width="718" height="665"/>
         <image name="HamburgerIcon" width="76" height="76"/>
     </resources>
 </document>

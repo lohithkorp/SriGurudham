@@ -120,6 +120,8 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
             switch indexPath.row {
             case 0:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
+            case 1:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "GuruvuGaruViewController")
             default:
                 break
             }

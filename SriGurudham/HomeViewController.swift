@@ -38,5 +38,4 @@ class HomeViewController: UIViewController {
             container.isSideViewControllerPresented = true
         }
     }
-    
 }
