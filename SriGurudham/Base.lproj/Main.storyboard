@@ -272,6 +272,7 @@
                     </view>
                     <connections>
                         <outlet property="announcementsLabel" destination="UDS-Lg-iOz" id="B5H-dZ-TI2"/>
+                        <outlet property="announcementsView" destination="pRv-zg-DqU" id="Rph-GJ-ptl"/>
                         <outlet property="gurujiImageView" destination="UOs-pC-lCP" id="qB6-Tm-yfu"/>
                         <outlet property="quotationLabel" destination="cbm-mA-jOc" id="bVd-eC-BbL"/>
                     </connections>
@@ -303,7 +304,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="HamburgerIcon"/>
                                         <connections>
-                                            <action selector="sideMenuButtonAction:" destination="Gzo-gW-kub" eventType="touchUpInside" id="BXY-ed-rvz"/>
+                                            <action selector="sideMenuButtonAction:" destination="Gzo-gW-kub" eventType="touchUpInside" id="o0V-hM-xMl"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dV-M6-3br">
@@ -380,9 +381,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtk-rf-Pbd">
                                         <rect key="frame" x="8" y="8" width="343" height="553.5"/>
-                                        <mutableString key="text">Satguru Sri Sivananda Murty is a spiritual master and mentor par excellence. Lord Sri Rama lived the life of an ideal human being. His exemplary life throws light on various facets of human existence and guides humanity as regards an ideal son, citizen, husband, ruler ; even an ideal opponent or adversary. Lord Sri Krishna gave us the philosophical basis for such a life, covering various aspects relating to Gyana, Moksha, Bhakti, Yoga, Karma etc. As Sri Rama, the Lord showed us how to be, by practically living such a life; while as Sri Krishna, He gave us the theoretical underpinning for it. Satguru Sri Sivananda Murty is a rare and unique combination of the theory and practice of Sanathana Dharma, where the ideal and blemishless life of Lord Sri Rama, i.e. God as man, is blended perfectly with the highest mystic state of spiritual excellence of Lord Sri Krishna, i.e. man as God, in a seamless union of the human and the superhuman.
+                                        <string key="text">Satguru Sri Sivananda Murty is a spiritual master and mentor par excellence. Lord Sri Rama lived the life of an ideal human being. His exemplary life throws light on various facets of human existence and guides humanity as regards an ideal son, citizen, husband, ruler ; even an ideal opponent or adversary. Lord Sri Krishna gave us the philosophical basis for such a life, covering various aspects relating to Gyana, Moksha, Bhakti, Yoga, Karma etc. As Sri Rama, the Lord showed us how to be, by practically living such a life; while as Sri Krishna, He gave us the theoretical underpinning for it. Satguru Sri Sivananda Murty is a rare and unique combination of the theory and practice of Sanathana Dharma, where the ideal and blemishless life of Lord Sri Rama, i.e. God as man, is blended perfectly with the highest mystic state of spiritual excellence of Lord Sri Krishna, i.e. man as God, in a seamless union of the human and the superhuman.
 
-Unless there is an unbound consciousness to tell the bound Jivatma what its true nature is, the Jiva will be ignorant of it, without a goal and deprived of a final purpose of existence. Satguru Sri Sivananda Murty is that unbound consciousness which shows the goal, lending meaning and purpose to the Jivatma’s evolution in the direction of that goal, while simultaneously facilitating the movement towards the goal. The ultimate goal is the unmanifest original which is unqualified and eternal, called variously as Brahman, Self, Truth, Nirguna or God. </mutableString>
+Unless there is an unbound consciousness to tell the bound Jivatma what its true nature is, the Jiva will be ignorant of it, without a goal and deprived of a final purpose of existence. Satguru Sri Sivananda Murty is that unbound consciousness which shows the goal, lending meaning and purpose to the Jivatma’s evolution in the direction of that goal, while simultaneously facilitating the movement towards the goal. The ultimate goal is the unmanifest original which is unqualified and eternal, called variously as Brahman, Self, Truth, Nirguna or God. </string>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -404,17 +405,17 @@ Unless there is an unbound consciousness to tell the bound Jivatma what its true
                             <constraint firstItem="RxN-PX-zWY" firstAttribute="top" secondItem="n89-Gi-gyY" secondAttribute="bottom" constant="12" id="Egg-jv-BDw"/>
                             <constraint firstItem="n89-Gi-gyY" firstAttribute="top" secondItem="6QR-Da-dRp" secondAttribute="bottom" constant="8" id="FBD-fc-ais"/>
                             <constraint firstAttribute="trailing" secondItem="QzQ-z8-hHA" secondAttribute="trailing" id="Hq8-HH-dXp"/>
-                            <constraint firstItem="VAY-Q2-UOG" firstAttribute="top" secondItem="Nip-LD-evM" secondAttribute="bottom" constant="8" id="Iix-eQ-XXh"/>
                             <constraint firstAttribute="trailing" secondItem="Nip-LD-evM" secondAttribute="trailing" constant="8" id="Pwf-MU-4be"/>
                             <constraint firstAttribute="trailing" secondItem="RxN-PX-zWY" secondAttribute="trailing" constant="8" id="Qc1-Uj-Q1x"/>
+                            <constraint firstItem="QzQ-z8-hHA" firstAttribute="top" secondItem="vgo-i1-ZAC" secondAttribute="bottom" id="TWk-4g-4S8"/>
                             <constraint firstItem="Nip-LD-evM" firstAttribute="top" secondItem="RxN-PX-zWY" secondAttribute="bottom" constant="8" id="WKq-5Q-eDl"/>
                             <constraint firstItem="6QR-Da-dRp" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leadingMargin" constant="8" id="bYI-dV-hxu"/>
-                            <constraint firstItem="QzQ-z8-hHA" firstAttribute="top" secondItem="vgo-i1-ZAC" secondAttribute="bottom" id="fhM-eM-TJe"/>
                             <constraint firstItem="Nip-LD-evM" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leading" constant="8" id="gKH-w6-bKv"/>
                             <constraint firstItem="QzQ-z8-hHA" firstAttribute="centerX" secondItem="RYD-Zn-MKL" secondAttribute="centerX" id="pTE-ql-rp0"/>
                             <constraint firstItem="6QR-Da-dRp" firstAttribute="top" secondItem="QzQ-z8-hHA" secondAttribute="bottom" constant="8" id="pf4-38-iWe"/>
                             <constraint firstItem="RxN-PX-zWY" firstAttribute="leading" secondItem="RYD-Zn-MKL" secondAttribute="leading" constant="8" id="uGE-Gu-b8s"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n89-Gi-gyY" secondAttribute="trailing" constant="35" id="uXE-Ea-QyS"/>
+                            <constraint firstItem="VAY-Q2-UOG" firstAttribute="top" secondItem="Nip-LD-evM" secondAttribute="bottom" constant="8" id="xRS-e6-Jc2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -422,9 +423,315 @@ Unless there is an unbound consciousness to tell the bound Jivatma what its true
             </objects>
             <point key="canvasLocation" x="3460" y="-0.44977511244377816"/>
         </scene>
+        <!--ScheduleDetailViewController-->
+        <scene sceneID="Jmc-eJ-fE4">
+            <objects>
+                <viewController restorationIdentifier="ScheduleDetailViewController" storyboardIdentifier="ScheduleDetailViewController" title="ScheduleDetailViewController" id="aoV-AH-jK3" customClass="ScheduleDetailViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tpL-Sv-3Xh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pf1-1Z-qx3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39W-rq-G7m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qU-Bl-kCd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC2-8n-nPY">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="PCa-5p-4z3"/>
+                                            <constraint firstAttribute="width" constant="29" id="f6i-7y-g73"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="aoV-AH-jK3" eventType="touchUpInside" id="FMA-2E-mBS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI2-5X-yOZ">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="174" id="dbp-jn-u8G"/>
+                                            <constraint firstAttribute="height" constant="21" id="hqS-EI-RNW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="PdX-lK-boV"/>
+                                    <constraint firstItem="vI2-5X-yOZ" firstAttribute="leading" secondItem="fC2-8n-nPY" secondAttribute="trailing" constant="31" id="WPN-iU-wXt"/>
+                                    <constraint firstAttribute="height" constant="52" id="eok-74-WXN"/>
+                                    <constraint firstItem="fC2-8n-nPY" firstAttribute="leading" secondItem="6qU-Bl-kCd" secondAttribute="leading" constant="8" id="hbL-V9-jDa"/>
+                                    <constraint firstItem="fC2-8n-nPY" firstAttribute="centerY" secondItem="6qU-Bl-kCd" secondAttribute="centerY" id="jIq-OV-lxP"/>
+                                    <constraint firstItem="vI2-5X-yOZ" firstAttribute="centerY" secondItem="6qU-Bl-kCd" secondAttribute="centerY" id="szW-wg-MNH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPg-VC-Zph">
+                                <rect key="frame" x="8" y="130" width="359" height="201"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a49-kP-Cbx">
+                                        <rect key="frame" x="8" y="8" width="343" height="185"/>
+                                        <mutableString key="text">ది : 20.05.2017 శనివారం
+
+- ఉదయం గం.8.30లకు హనుమత్ ధ్వజారోహణ
+- సద్గురు దేవులకు పంచామృతాభిషేకములు, పుష్పాఅర్చన
+- శ్రీరమణ గురుదేవుల సత్సంగం
+- తీర్థప్రసాదాల వితరణ
+- మధ్యాహ్నం గం : 3ల నుండి మన్యుసూక్త లక్ష్మీ హోమము (అన్ని వృత్తి,వ్యాపారాల అభివృద్ధి కోసం)
+- సాయంత్రం గ్రామోత్సవ శోభాయాత్ర, ప్రసాద వితరణ.</mutableString>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <color key="textColor" red="0.78823529410000004" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="3jO-1Z-K2M"/>
+                                    <constraint firstAttribute="bottom" secondItem="a49-kP-Cbx" secondAttribute="bottom" constant="8" id="7Gj-r5-NG1"/>
+                                    <constraint firstAttribute="trailing" secondItem="a49-kP-Cbx" secondAttribute="trailing" constant="8" id="B4G-OV-ih9"/>
+                                    <constraint firstItem="a49-kP-Cbx" firstAttribute="centerY" secondItem="zPg-VC-Zph" secondAttribute="centerY" id="I0R-8u-bVP"/>
+                                    <constraint firstItem="a49-kP-Cbx" firstAttribute="leading" secondItem="zPg-VC-Zph" secondAttribute="leading" constant="8" id="V4g-7T-4Ib"/>
+                                    <constraint firstItem="a49-kP-Cbx" firstAttribute="centerX" secondItem="zPg-VC-Zph" secondAttribute="centerX" id="VW9-ZQ-Zts"/>
+                                    <constraint firstItem="a49-kP-Cbx" firstAttribute="top" secondItem="zPg-VC-Zph" secondAttribute="top" constant="8" id="hgL-5e-qAZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8e-1n-lfz">
+                                <rect key="frame" x="30" y="80" width="315" height="34"/>
+                                <string key="text">హనుమత్ జయంతోత్సవములు-2017
+ఈ నెల 20, 21 తేదీల్లో బలుసుపాడులో వేడుకలు</string>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-Ah-hQo">
+                                <rect key="frame" x="8" y="347" width="359" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCH-vM-9wu">
+                                        <rect key="frame" x="8" y="8" width="343" height="184"/>
+                                        <mutableString key="text">ది : 21.05.2017 ఆదివారం
+
+- ఉదయం గం : 6.30లకు సద్గురుదేవులకు, శ్రీఆంజనేయస్వామి వారికి పంచామృతాభిషేకములు.
+- గం : 8.30లకు ఆంజనేయస్వామి వారిని ఊరేగింపుగా మండపం వద్దకు తోడ్కొనివెళ్ళుట.
+- గం : 9:00లకు పూర్ణాహుతి, కళ్యాణం, పట్టాభిషేకం, పుష్పాభిషేకం.
+- గం : 11:00లకు శ్రీరమణ గురుదేవుల అనుగ్రహభాషణ
+- గం : 12:00లకు శ్రీఆంజనేయస్వామి మహాప్రసాద వితరణ.</mutableString>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                        <color key="textColor" red="0.78823529410000004" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XCH-vM-9wu" firstAttribute="centerX" secondItem="ZYk-Ah-hQo" secondAttribute="centerX" id="4Yg-1E-nyN"/>
+                                    <constraint firstAttribute="bottom" secondItem="XCH-vM-9wu" secondAttribute="bottom" constant="8" id="OZM-Er-mER"/>
+                                    <constraint firstAttribute="height" constant="200" id="Qg4-Qy-xDe"/>
+                                    <constraint firstItem="XCH-vM-9wu" firstAttribute="centerY" secondItem="ZYk-Ah-hQo" secondAttribute="centerY" id="fkW-pI-sKR"/>
+                                    <constraint firstAttribute="trailing" secondItem="XCH-vM-9wu" secondAttribute="trailing" constant="8" id="gs3-IF-qdb"/>
+                                    <constraint firstItem="XCH-vM-9wu" firstAttribute="top" secondItem="ZYk-Ah-hQo" secondAttribute="top" constant="8" id="o2W-pP-mgq"/>
+                                    <constraint firstItem="XCH-vM-9wu" firstAttribute="leading" secondItem="ZYk-Ah-hQo" secondAttribute="leading" constant="8" id="yc3-f0-Qne"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="గమనిక : ది : 21.05.17 ఆదివారం ఉదయం గం : 6ల నుండి జగ్గయ్యపేట పాతవెంకటేశ్వరస్వామి ఆలయ వద్ద బస్సుల సదుపాయం కలదు." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKc-a1-4mB">
+                                <rect key="frame" x="16" y="563" width="343" height="47"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZYk-Ah-hQo" firstAttribute="top" secondItem="zPg-VC-Zph" secondAttribute="bottom" constant="16" id="0l8-x2-jmL"/>
+                            <constraint firstAttribute="trailing" secondItem="zPg-VC-Zph" secondAttribute="trailing" constant="8" id="3Av-rL-zxa"/>
+                            <constraint firstItem="E8e-1n-lfz" firstAttribute="centerX" secondItem="39W-rq-G7m" secondAttribute="centerX" id="3MN-JC-OB4"/>
+                            <constraint firstItem="zPg-VC-Zph" firstAttribute="centerX" secondItem="39W-rq-G7m" secondAttribute="centerX" id="6wo-KZ-1IC"/>
+                            <constraint firstAttribute="trailing" secondItem="E8e-1n-lfz" secondAttribute="trailing" constant="30" id="7Ng-Jq-0Tb"/>
+                            <constraint firstItem="ZYk-Ah-hQo" firstAttribute="leading" secondItem="39W-rq-G7m" secondAttribute="leading" constant="8" id="86K-gW-ueR"/>
+                            <constraint firstItem="6qU-Bl-kCd" firstAttribute="top" secondItem="tpL-Sv-3Xh" secondAttribute="bottom" id="FWs-YV-LWE"/>
+                            <constraint firstItem="ZYk-Ah-hQo" firstAttribute="centerX" secondItem="39W-rq-G7m" secondAttribute="centerX" id="MS6-C0-CzN"/>
+                            <constraint firstItem="E8e-1n-lfz" firstAttribute="leading" secondItem="39W-rq-G7m" secondAttribute="leading" constant="30" id="R0H-TF-oKr"/>
+                            <constraint firstItem="sKc-a1-4mB" firstAttribute="leading" secondItem="39W-rq-G7m" secondAttribute="leading" constant="16" id="YNH-WR-iQd"/>
+                            <constraint firstItem="6qU-Bl-kCd" firstAttribute="centerX" secondItem="39W-rq-G7m" secondAttribute="centerX" id="cTo-rv-i3D"/>
+                            <constraint firstAttribute="trailing" secondItem="6qU-Bl-kCd" secondAttribute="trailing" id="eB2-El-6mv"/>
+                            <constraint firstAttribute="trailing" secondItem="sKc-a1-4mB" secondAttribute="trailing" constant="16" id="hgh-GK-5eM"/>
+                            <constraint firstItem="sKc-a1-4mB" firstAttribute="top" secondItem="ZYk-Ah-hQo" secondAttribute="bottom" constant="16" id="kuY-f3-MNO"/>
+                            <constraint firstItem="E8e-1n-lfz" firstAttribute="top" secondItem="6qU-Bl-kCd" secondAttribute="bottom" constant="8" id="mnk-C6-12d"/>
+                            <constraint firstItem="zPg-VC-Zph" firstAttribute="leading" secondItem="39W-rq-G7m" secondAttribute="leading" constant="8" id="uY3-UF-gin"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYk-Ah-hQo" secondAttribute="trailing" constant="8" id="vyz-eg-FnD"/>
+                            <constraint firstItem="zPg-VC-Zph" firstAttribute="top" secondItem="E8e-1n-lfz" secondAttribute="bottom" constant="16" id="wby-cj-qZb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5g-We-ATS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4145" y="0.0"/>
+        </scene>
+        <!--ContactViewController-->
+        <scene sceneID="Ske-ro-EA5">
+            <objects>
+                <viewController restorationIdentifier="ContactViewController" storyboardIdentifier="ContactViewController" title="ContactViewController" id="DAU-in-e12" customClass="ContactViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbv-Sy-QaF"/>
+                        <viewControllerLayoutGuide type="bottom" id="LeX-TP-Db2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jVh-tP-UqV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su4-qS-JoH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhZ-Xt-uS5">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="0aG-OM-LFU"/>
+                                            <constraint firstAttribute="width" constant="29" id="nEO-Lf-lQQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="DAU-in-e12" eventType="touchUpInside" id="pos-9F-2Bw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfM-Qs-MPM">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="GYW-lc-R4h"/>
+                                            <constraint firstAttribute="width" constant="174" id="W6a-Qi-6ed"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SfM-Qs-MPM" firstAttribute="centerY" secondItem="su4-qS-JoH" secondAttribute="centerY" id="8Lu-NE-aIR"/>
+                                    <constraint firstAttribute="width" constant="375" id="Gjn-wr-jz2"/>
+                                    <constraint firstItem="yhZ-Xt-uS5" firstAttribute="leading" secondItem="su4-qS-JoH" secondAttribute="leading" constant="8" id="MID-xu-Og8"/>
+                                    <constraint firstItem="SfM-Qs-MPM" firstAttribute="leading" secondItem="yhZ-Xt-uS5" secondAttribute="trailing" constant="31" id="VVS-xt-xJT"/>
+                                    <constraint firstAttribute="height" constant="52" id="b8L-II-XOl"/>
+                                    <constraint firstItem="yhZ-Xt-uS5" firstAttribute="centerY" secondItem="su4-qS-JoH" secondAttribute="centerY" id="vRH-HE-CwH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-Ya-9oK">
+                                <rect key="frame" x="24" y="80" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9s8-db-5C3"/>
+                                    <constraint firstAttribute="width" constant="300" id="S93-wG-Z8M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide2" translatesAutoresizingMaskIntoConstraints="NO" id="zRz-xG-xDv">
+                                <rect key="frame" x="0.0" y="109" width="375" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="202" id="Ctn-xK-I7Y"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbG-Bs-iNi">
+                                <rect key="frame" x="8" y="319" width="359" height="340"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5QD-yd-yOf">
+                                        <rect key="frame" x="8" y="8" width="342" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHu-FF-hZL">
+                                                <rect key="frame" x="121.5" y="14" width="100.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="yHu-FF-hZL" firstAttribute="centerX" secondItem="5QD-yd-yOf" secondAttribute="centerX" id="9zN-Cj-slq"/>
+                                            <constraint firstAttribute="height" constant="44" id="S50-HT-mOw"/>
+                                            <constraint firstItem="yHu-FF-hZL" firstAttribute="centerY" secondItem="5QD-yd-yOf" secondAttribute="centerY" id="irs-kq-Jeg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEE-cs-5Ug">
+                                        <rect key="frame" x="8" y="60" width="342" height="80"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h18-fe-ZMM">
+                                                <rect key="frame" x="8" y="27.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="DH5-WI-4iw"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Kve-TZ-dki"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzn-M3-xPq">
+                                                <rect key="frame" x="49" y="22.5" width="277" height="36"/>
+                                                <string key="text">Balusupadu, Jaggayyapeta - 521175.
+Andhra Pradesh, INDIA.</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                                <color key="textColor" red="0.78823529410000004" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="yzn-M3-xPq" secondAttribute="trailing" constant="16" id="2WS-Ad-VSU"/>
+                                            <constraint firstItem="h18-fe-ZMM" firstAttribute="leading" secondItem="oEE-cs-5Ug" secondAttribute="leading" constant="8" id="O9U-9O-Xn1"/>
+                                            <constraint firstItem="h18-fe-ZMM" firstAttribute="centerY" secondItem="oEE-cs-5Ug" secondAttribute="centerY" id="fCo-fP-HhY"/>
+                                            <constraint firstItem="yzn-M3-xPq" firstAttribute="centerY" secondItem="oEE-cs-5Ug" secondAttribute="centerY" id="fIF-AX-3id"/>
+                                            <constraint firstAttribute="height" constant="80" id="gST-7S-JT1"/>
+                                            <constraint firstItem="yzn-M3-xPq" firstAttribute="leading" secondItem="h18-fe-ZMM" secondAttribute="trailing" constant="16" id="vXj-Hd-HcW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Y7-fm-7dG">
+                                        <rect key="frame" x="8" y="148" width="342" height="130"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="Kdy-3Q-fnI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oEE-cs-5Ug" firstAttribute="leading" secondItem="MbG-Bs-iNi" secondAttribute="leading" constant="8" id="7Sy-fX-n1A"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Y7-fm-7dG" secondAttribute="trailing" constant="8" id="8zH-3m-5ot"/>
+                                    <constraint firstItem="6Y7-fm-7dG" firstAttribute="leading" secondItem="MbG-Bs-iNi" secondAttribute="leading" constant="8" id="CKG-94-PrG"/>
+                                    <constraint firstItem="oEE-cs-5Ug" firstAttribute="top" secondItem="5QD-yd-yOf" secondAttribute="bottom" constant="8" id="DTb-hz-ob2"/>
+                                    <constraint firstItem="6Y7-fm-7dG" firstAttribute="top" secondItem="oEE-cs-5Ug" secondAttribute="bottom" constant="8" id="ICc-gO-rS0"/>
+                                    <constraint firstItem="5QD-yd-yOf" firstAttribute="centerX" secondItem="MbG-Bs-iNi" secondAttribute="centerX" id="OST-aK-xF1"/>
+                                    <constraint firstItem="5QD-yd-yOf" firstAttribute="leading" secondItem="MbG-Bs-iNi" secondAttribute="leading" constant="8" id="QGc-AY-wYe"/>
+                                    <constraint firstAttribute="trailing" secondItem="oEE-cs-5Ug" secondAttribute="trailing" constant="8" id="ZVE-yH-YZM"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Y7-fm-7dG" secondAttribute="bottom" constant="8" id="goj-kW-2ZP"/>
+                                    <constraint firstItem="6Y7-fm-7dG" firstAttribute="centerX" secondItem="MbG-Bs-iNi" secondAttribute="centerX" id="mIK-H8-O5m"/>
+                                    <constraint firstItem="oEE-cs-5Ug" firstAttribute="centerX" secondItem="MbG-Bs-iNi" secondAttribute="centerX" id="pa0-Kh-NA2"/>
+                                    <constraint firstItem="5QD-yd-yOf" firstAttribute="top" secondItem="MbG-Bs-iNi" secondAttribute="top" constant="8" id="w4Z-vs-qrW"/>
+                                    <constraint firstAttribute="trailing" secondItem="5QD-yd-yOf" secondAttribute="trailing" constant="8" id="wqx-s8-mVD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hh4-Ya-9oK" firstAttribute="top" secondItem="su4-qS-JoH" secondAttribute="bottom" constant="8" id="17d-xL-yKw"/>
+                            <constraint firstItem="MbG-Bs-iNi" firstAttribute="leading" secondItem="jVh-tP-UqV" secondAttribute="leading" constant="8" id="4aO-pn-OWu"/>
+                            <constraint firstItem="zRz-xG-xDv" firstAttribute="leading" secondItem="jVh-tP-UqV" secondAttribute="leading" id="6Zx-iR-7oa"/>
+                            <constraint firstItem="su4-qS-JoH" firstAttribute="top" secondItem="Hbv-Sy-QaF" secondAttribute="bottom" id="BEa-65-E8g"/>
+                            <constraint firstAttribute="trailing" secondItem="zRz-xG-xDv" secondAttribute="trailing" id="GJk-lM-4Kf"/>
+                            <constraint firstAttribute="trailing" secondItem="su4-qS-JoH" secondAttribute="trailing" id="IYN-cN-xc4"/>
+                            <constraint firstItem="hh4-Ya-9oK" firstAttribute="leading" secondItem="jVh-tP-UqV" secondAttribute="leadingMargin" constant="8" id="OIN-an-bDD"/>
+                            <constraint firstAttribute="trailing" secondItem="MbG-Bs-iNi" secondAttribute="trailing" constant="8" id="Opu-jQ-lWg"/>
+                            <constraint firstItem="zRz-xG-xDv" firstAttribute="centerX" secondItem="jVh-tP-UqV" secondAttribute="centerX" id="SnZ-Nm-vl0"/>
+                            <constraint firstItem="LeX-TP-Db2" firstAttribute="top" secondItem="MbG-Bs-iNi" secondAttribute="bottom" constant="8" id="cS7-3R-5zJ"/>
+                            <constraint firstItem="su4-qS-JoH" firstAttribute="centerX" secondItem="jVh-tP-UqV" secondAttribute="centerX" id="dt0-W1-psf"/>
+                            <constraint firstItem="MbG-Bs-iNi" firstAttribute="top" secondItem="zRz-xG-xDv" secondAttribute="bottom" constant="8" id="e1d-4X-tUa"/>
+                            <constraint firstItem="zRz-xG-xDv" firstAttribute="top" secondItem="hh4-Ya-9oK" secondAttribute="bottom" constant="8" id="gRU-Jv-WG3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDd-EN-lfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4853.6000000000004" y="-0.44977511244377816"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AboutGuruvugaru" width="718" height="665"/>
         <image name="HamburgerIcon" width="76" height="76"/>
+        <image name="slide2" width="375" height="189"/>
     </resources>
 </document>

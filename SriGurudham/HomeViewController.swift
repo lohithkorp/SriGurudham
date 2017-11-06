@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var announcementsLabel: UILabel!
     @IBOutlet weak var gurujiImageView: UIImageView!
     
+    @IBOutlet weak var announcementsView: UIView!
     @IBOutlet weak var quotationLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,13 @@ class HomeViewController: UIViewController {
         quotationLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org", classId: "ntr")
         announcementsLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org/schedule", classId: "inside")
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showScheduleVc))
+        announcementsView.addGestureRecognizer(tapGesture)
+        
+    }
+    
+    func showScheduleVc() {
+        self.so_containerViewController?.topViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScheduleDetailViewController")
     }
 
     @IBAction func sideMenuButtonAction(_ sender: Any) {

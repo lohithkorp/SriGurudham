@@ -15,6 +15,8 @@
 		E284B8CE1F8514C300774FE5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8CD1F8514C300774FE5 /* UIViewControllerExtension.swift */; };
 		E284B8D11F851ED500774FE5 /* Gurajada.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E284B8D01F851EC500774FE5 /* Gurajada.ttf */; };
 		E284B8DA1F9C148400774FE5 /* GuruvuGaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */; };
+		E2C3727E1FAFD682006884F0 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */; };
+		E2C372801FAFDDEA006884F0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -39,6 +41,8 @@
 		E284B8CD1F8514C300774FE5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E284B8D01F851EC500774FE5 /* Gurajada.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gurajada.ttf; sourceTree = "<group>"; };
 		E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruvuGaruViewController.swift; sourceTree = "<group>"; };
+		E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
+		E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				E53C1FF41EFBF855003D73B0 /* SideViewController.swift */,
 				E284B8CA1F8219BF00774FE5 /* HomeViewController.swift */,
 				E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */,
+				E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */,
+				E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -297,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53C1FF31EFBF817003D73B0 /* TopViewController.swift in Sources */,
+				E2C3727E1FAFD682006884F0 /* ScheduleDetailViewController.swift in Sources */,
 				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
 				E284B8CE1F8514C300774FE5 /* UIViewControllerExtension.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
+				E2C372801FAFDDEA006884F0 /* ContactViewController.swift in Sources */,
 				E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */,
 				E284B8DA1F9C148400774FE5 /* GuruvuGaruViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
