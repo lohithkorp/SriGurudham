@@ -19,7 +19,7 @@ extension UIViewController {
             do {
                 let contents = try String(contentsOf: url)
                 
-                do{
+                do {
                     let html = contents
                     let doc: Document = try SwiftSoup.parse(html)
                     receivedTextData = try doc.getElementsByClass(classId).tagName("h").text()

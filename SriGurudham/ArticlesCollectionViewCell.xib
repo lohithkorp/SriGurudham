@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ArticlesCollectionViewCell" reuseIdentifier="ArticlesCollectionViewCell" id="gTV-IL-0wX" customClass="ArticlesCollectionViewCell" customModule="SriGurudham" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-rG-3TI">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YLt-rG-3TI" secondAttribute="bottom" id="3Qs-AT-dSA"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Fb-4V-lLu"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7r8-VZ-0l3"/>
+                <constraint firstAttribute="trailing" secondItem="YLt-rG-3TI" secondAttribute="trailing" id="DIR-il-PYi"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FCf-sh-R0J"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="h6t-kh-Vwz"/>
+            </constraints>
+            <connections>
+                <outlet property="articleImage" destination="YLt-rG-3TI" id="dxl-7i-SwC"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

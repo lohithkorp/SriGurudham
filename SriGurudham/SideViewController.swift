@@ -124,6 +124,13 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "GuruvuGaruViewController")
             case 2:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ScheduleDetailViewController")
+                
+            case 6:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ArticlesViewController")
+                
+            case 8:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ContactViewController")
+                
             default:
                 break
             }

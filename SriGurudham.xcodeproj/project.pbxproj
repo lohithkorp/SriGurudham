@@ -17,6 +17,9 @@
 		E284B8DA1F9C148400774FE5 /* GuruvuGaruViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */; };
 		E2C3727E1FAFD682006884F0 /* ScheduleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */; };
 		E2C372801FAFDDEA006884F0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */; };
+		E2C372821FB2215C006884F0 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372811FB2215C006884F0 /* ArticlesViewController.swift */; };
+		E2C372851FB22384006884F0 /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */; };
+		E2C372861FB22384006884F0 /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -43,6 +46,9 @@
 		E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuruvuGaruViewController.swift; sourceTree = "<group>"; };
 		E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleDetailViewController.swift; sourceTree = "<group>"; };
 		E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		E2C372811FB2215C006884F0 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 				E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */,
 				E2CF4CCA1F7038360035EBEC /* SideMenuCommunicateCell.xib */,
 				E284B8C81F820AD400774FE5 /* SideMenuSectionHeaderView.xib */,
+				E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */,
+				E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 				E284B8D91F9C148300774FE5 /* GuruvuGaruViewController.swift */,
 				E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */,
 				E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */,
+				E2C372811FB2215C006884F0 /* ArticlesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 				E53C1FE11EFBA9E4003D73B0 /* Assets.xcassets in Resources */,
 				E53C1FDF1EFBA9E4003D73B0 /* Main.storyboard in Resources */,
 				E2CF4CCC1F7038360035EBEC /* SideMenuCommunicateCell.xib in Resources */,
+				E2C372861FB22384006884F0 /* ArticlesCollectionViewCell.xib in Resources */,
 				E20E66B01F6EC04C00FB526D /* SideMenuCell.xib in Resources */,
 				E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */,
 			);
@@ -304,6 +314,7 @@
 			files = (
 				E53C1FF31EFBF817003D73B0 /* TopViewController.swift in Sources */,
 				E2C3727E1FAFD682006884F0 /* ScheduleDetailViewController.swift in Sources */,
+				E2C372821FB2215C006884F0 /* ArticlesViewController.swift in Sources */,
 				E20E66B21F6EC09B00FB526D /* SideMenuCell.swift in Sources */,
 				E284B8CE1F8514C300774FE5 /* UIViewControllerExtension.swift in Sources */,
 				E53C1FED1EFBF7A0003D73B0 /* ContainerViewController.swift in Sources */,
@@ -311,6 +322,7 @@
 				E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */,
 				E284B8DA1F9C148400774FE5 /* GuruvuGaruViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
+				E2C372851FB22384006884F0 /* ArticlesCollectionViewCell.swift in Sources */,
 				E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,
 				E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */,
