@@ -843,7 +843,7 @@ Andhra Pradesh, INDIA.</string>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-su-IBQ">
                                 <rect key="frame" x="0.0" y="109" width="375" height="558"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="0.93333333333333335" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="dlF-O8-3BY"/>
                                 </constraints>
@@ -884,6 +884,38 @@ Andhra Pradesh, INDIA.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmX-u0-Gta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5580" y="-0.44977511244377816"/>
+        </scene>
+        <!--ArticleDetailViewController-->
+        <scene sceneID="gWh-U0-WEE">
+            <objects>
+                <viewController restorationIdentifier="ArticleDetailViewController" storyboardIdentifier="ArticleDetailViewController" title="ArticleDetailViewController" id="xDB-Qt-txX" customClass="ArticleDetailViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QMy-wc-bNk"/>
+                        <viewControllerLayoutGuide type="bottom" id="rsH-xe-J7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0IX-KO-lyD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ADR-hW-nlD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ADR-hW-nlD" firstAttribute="leading" secondItem="0IX-KO-lyD" secondAttribute="leading" id="HSx-lw-wWw"/>
+                            <constraint firstItem="ADR-hW-nlD" firstAttribute="top" secondItem="QMy-wc-bNk" secondAttribute="bottom" id="Xwo-yT-TqH"/>
+                            <constraint firstAttribute="trailing" secondItem="ADR-hW-nlD" secondAttribute="trailing" id="oPf-sN-YVI"/>
+                            <constraint firstItem="rsH-xe-J7s" firstAttribute="top" secondItem="ADR-hW-nlD" secondAttribute="bottom" id="syw-vo-5tk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="articleDetailImageView" destination="ADR-hW-nlD" id="SFO-eA-IfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gon-yf-3MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6305" y="0.0"/>
         </scene>
     </scenes>
     <resources>

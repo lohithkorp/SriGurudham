@@ -20,6 +20,7 @@
 		E2C372821FB2215C006884F0 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372811FB2215C006884F0 /* ArticlesViewController.swift */; };
 		E2C372851FB22384006884F0 /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */; };
 		E2C372861FB22384006884F0 /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */; };
+		E2C372881FB2364E006884F0 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -49,6 +50,7 @@
 		E2C372811FB2215C006884F0 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
+		E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				E2C3727D1FAFD682006884F0 /* ScheduleDetailViewController.swift */,
 				E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */,
 				E2C372811FB2215C006884F0 /* ArticlesViewController.swift */,
+				E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,
 				E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */,
+				E2C372881FB2364E006884F0 /* ArticleDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

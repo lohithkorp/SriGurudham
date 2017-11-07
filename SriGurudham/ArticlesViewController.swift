@@ -90,16 +90,21 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let myURL = URL(string: articleImages[indexPath.row])
         
-        let testImage = try? Data(contentsOf: myURL!)
+        let articleImage = try? Data(contentsOf: myURL!)
         
-        if let testImage = testImage {
-            collectionViewCell.articleImage.image = UIImage(data: testImage)
+        if let articleImage = articleImage {
+            collectionViewCell.articleImage.image = UIImage(data: articleImage)
         }
         
         return collectionViewCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let articleDetailVc = storyboard?.instantiateViewController(withIdentifier: "ArticleDetailViewController") as! ArticleDetailViewController
+        articleDetailVc.urlString = articleImages[indexPath.row]
+        let navigationController = UINavigationController(rootViewController: articleDetailVc)
+        self.present(navigationController, animated: true, completion: nil)
         
     }
     
