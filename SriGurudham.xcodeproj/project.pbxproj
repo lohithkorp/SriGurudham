@@ -21,6 +21,8 @@
 		E2C372851FB22384006884F0 /* ArticlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */; };
 		E2C372861FB22384006884F0 /* ArticlesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */; };
 		E2C372881FB2364E006884F0 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */; };
+		E2C3728A1FB3E08A006884F0 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C372891FB3E08A006884F0 /* ServicesViewController.swift */; };
+		E2C3728C1FB4AFB4006884F0 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3728B1FB4AFB4006884F0 /* AudioViewController.swift */; };
 		E2CF4CC11F70320E0035EBEC /* SideMenuImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */; };
 		E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */; };
 		E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */; };
@@ -51,6 +53,8 @@
 		E2C372831FB22384006884F0 /* ArticlesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2C372841FB22384006884F0 /* ArticlesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticlesCollectionViewCell.xib; sourceTree = "<group>"; };
 		E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		E2C372891FB3E08A006884F0 /* ServicesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		E2C3728B1FB4AFB4006884F0 /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		E2CF4CC01F70320E0035EBEC /* SideMenuImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuImageCell.xib; sourceTree = "<group>"; };
 		E2CF4CC21F7035190035EBEC /* SideMenuImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuImageCell.swift; sourceTree = "<group>"; };
 		E2CF4CC91F7038360035EBEC /* SideMenuCommunicateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCommunicateCell.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				E2C3727F1FAFDDEA006884F0 /* ContactViewController.swift */,
 				E2C372811FB2215C006884F0 /* ArticlesViewController.swift */,
 				E2C372871FB2364E006884F0 /* ArticleDetailViewController.swift */,
+				E2C372891FB3E08A006884F0 /* ServicesViewController.swift */,
+				E2C3728B1FB4AFB4006884F0 /* AudioViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -325,11 +331,13 @@
 				E284B8CB1F8219BF00774FE5 /* HomeViewController.swift in Sources */,
 				E284B8DA1F9C148400774FE5 /* GuruvuGaruViewController.swift in Sources */,
 				E53C1FDA1EFBA9E4003D73B0 /* AppDelegate.swift in Sources */,
+				E2C3728A1FB3E08A006884F0 /* ServicesViewController.swift in Sources */,
 				E2C372851FB22384006884F0 /* ArticlesCollectionViewCell.swift in Sources */,
 				E2CF4CCB1F7038360035EBEC /* SideMenuCommunicateCell.swift in Sources */,
 				E53C1FF51EFBF855003D73B0 /* SideViewController.swift in Sources */,
 				E2CF4CC31F7035190035EBEC /* SideMenuImageCell.swift in Sources */,
 				E2C372881FB2364E006884F0 /* ArticleDetailViewController.swift in Sources */,
+				E2C3728C1FB4AFB4006884F0 /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SriGurudham/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sgect.SriGurudham;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SriGurudham/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.sgect.SriGurudham;
 				PRODUCT_NAME = "$(TARGET_NAME)";

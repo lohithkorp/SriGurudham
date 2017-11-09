@@ -832,17 +832,16 @@ Andhra Pradesh, INDIA.</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-dk-7UL">
-                                <rect key="frame" x="24" y="80" width="300" height="21"/>
+                                <rect key="frame" x="8" y="80" width="359" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="61I-7e-Hgb"/>
-                                    <constraint firstAttribute="width" constant="300" id="c16-DE-mXZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="j1X-Y8-ny3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
                                 <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XSS-su-IBQ">
-                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="549"/>
                                 <color key="backgroundColor" red="1" green="0.93333333333333335" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="dlF-O8-3BY"/>
@@ -868,12 +867,13 @@ Andhra Pradesh, INDIA.</string>
                         <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FFc-ne-rNn" firstAttribute="top" secondItem="XSS-su-IBQ" secondAttribute="bottom" id="46R-jz-RLh"/>
-                            <constraint firstItem="hzH-dk-7UL" firstAttribute="top" secondItem="h73-Ig-oNd" secondAttribute="bottom" constant="8" id="4RA-He-TN8"/>
                             <constraint firstItem="XSS-su-IBQ" firstAttribute="centerX" secondItem="720-2v-gmL" secondAttribute="centerX" id="B41-VD-vBK"/>
                             <constraint firstItem="h73-Ig-oNd" firstAttribute="centerX" secondItem="720-2v-gmL" secondAttribute="centerX" id="Dsy-B9-CJj"/>
-                            <constraint firstItem="XSS-su-IBQ" firstAttribute="top" secondItem="hzH-dk-7UL" secondAttribute="bottom" constant="8" id="MAi-Go-qdp"/>
+                            <constraint firstItem="hzH-dk-7UL" firstAttribute="top" secondItem="h73-Ig-oNd" secondAttribute="bottom" constant="8" id="F5d-WO-XbG"/>
                             <constraint firstAttribute="trailing" secondItem="h73-Ig-oNd" secondAttribute="trailing" id="PNh-4M-nkG"/>
-                            <constraint firstItem="hzH-dk-7UL" firstAttribute="leading" secondItem="720-2v-gmL" secondAttribute="leadingMargin" constant="8" id="ZnO-eW-JHK"/>
+                            <constraint firstItem="XSS-su-IBQ" firstAttribute="top" secondItem="hzH-dk-7UL" secondAttribute="bottom" constant="8" id="SXV-GH-7lY"/>
+                            <constraint firstAttribute="trailing" secondItem="hzH-dk-7UL" secondAttribute="trailing" constant="8" id="X8w-N6-20c"/>
+                            <constraint firstItem="hzH-dk-7UL" firstAttribute="leading" secondItem="720-2v-gmL" secondAttribute="leading" constant="8" id="Y4Y-aE-igF"/>
                             <constraint firstItem="h73-Ig-oNd" firstAttribute="top" secondItem="fNz-hM-zYF" secondAttribute="bottom" id="kXv-bN-LaA"/>
                         </constraints>
                     </view>
@@ -916,6 +916,166 @@ Andhra Pradesh, INDIA.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gon-yf-3MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6305" y="0.0"/>
+        </scene>
+        <!--ServicesViewController-->
+        <scene sceneID="nQG-hY-QYy">
+            <objects>
+                <viewController restorationIdentifier="ServicesViewController" storyboardIdentifier="ServicesViewController" title="ServicesViewController" id="BDy-uu-fcR" customClass="ServicesViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2R4-g4-Ob1"/>
+                        <viewControllerLayoutGuide type="bottom" id="WOg-zK-s4K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LMo-Ep-uFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZ8-vq-VND">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE8-NX-INg">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="dAt-xp-F0C"/>
+                                            <constraint firstAttribute="width" constant="29" id="fkN-eP-7WL"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="BDy-uu-fcR" eventType="touchUpInside" id="umR-se-B9h"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-Ge-8lK">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="g7D-bh-12b"/>
+                                            <constraint firstAttribute="width" constant="174" id="gu8-dT-I5A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aCg-Ge-8lK" firstAttribute="centerY" secondItem="jZ8-vq-VND" secondAttribute="centerY" id="Kgg-6w-T63"/>
+                                    <constraint firstAttribute="width" constant="375" id="Lyt-Ae-U8m"/>
+                                    <constraint firstItem="lE8-NX-INg" firstAttribute="leading" secondItem="jZ8-vq-VND" secondAttribute="leading" constant="8" id="MqJ-Lt-kMr"/>
+                                    <constraint firstItem="aCg-Ge-8lK" firstAttribute="leading" secondItem="lE8-NX-INg" secondAttribute="trailing" constant="31" id="Vuw-rX-2rs"/>
+                                    <constraint firstAttribute="height" constant="52" id="YlX-XI-1Vb"/>
+                                    <constraint firstItem="lE8-NX-INg" firstAttribute="centerY" secondItem="jZ8-vq-VND" secondAttribute="centerY" id="cYe-kf-J6X"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVf-ms-bLd">
+                                <rect key="frame" x="8" y="80" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KpQ-Es-TIJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBj-n4-fEg">
+                                <rect key="frame" x="129" y="323.5" width="117.5" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QBj-n4-fEg" firstAttribute="centerX" secondItem="LMo-Ep-uFb" secondAttribute="centerX" id="7ge-as-GhL"/>
+                            <constraint firstItem="rVf-ms-bLd" firstAttribute="top" secondItem="jZ8-vq-VND" secondAttribute="bottom" constant="8" id="85I-F6-XJV"/>
+                            <constraint firstAttribute="trailing" secondItem="jZ8-vq-VND" secondAttribute="trailing" id="ABt-DB-guw"/>
+                            <constraint firstAttribute="trailing" secondItem="rVf-ms-bLd" secondAttribute="trailing" constant="8" id="I2Q-gg-c47"/>
+                            <constraint firstItem="jZ8-vq-VND" firstAttribute="top" secondItem="2R4-g4-Ob1" secondAttribute="bottom" id="Ta9-ef-leJ"/>
+                            <constraint firstItem="QBj-n4-fEg" firstAttribute="centerY" secondItem="LMo-Ep-uFb" secondAttribute="centerY" id="V4b-7e-Xo8"/>
+                            <constraint firstItem="rVf-ms-bLd" firstAttribute="leading" secondItem="LMo-Ep-uFb" secondAttribute="leading" constant="8" id="iHh-bW-dhv"/>
+                            <constraint firstItem="jZ8-vq-VND" firstAttribute="centerX" secondItem="LMo-Ep-uFb" secondAttribute="centerX" id="sSc-Ds-ES3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9t-gQ-JM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5580" y="693"/>
+        </scene>
+        <!--AudioViewController-->
+        <scene sceneID="cmc-I2-Y66">
+            <objects>
+                <viewController restorationIdentifier="ServicesViewController" storyboardIdentifier="AudioViewController" title="AudioViewController" id="b2O-xN-dcj" customClass="AudioViewController" customModule="SriGurudham" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="udC-7V-RW7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ANq-OK-mh4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CCz-MP-bYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-sX-Szl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYO-kk-UQt">
+                                        <rect key="frame" x="8" y="13" width="29" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="IIn-AI-p34"/>
+                                            <constraint firstAttribute="height" constant="26" id="Ie3-tJ-D6L"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="HamburgerIcon"/>
+                                        <connections>
+                                            <action selector="sideMenuButtonAction:" destination="b2O-xN-dcj" eventType="touchUpInside" id="DrP-Zl-1aV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sri Gurudham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1Q-TO-b4w">
+                                        <rect key="frame" x="68" y="15.5" width="174" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="gMe-fM-Mwv"/>
+                                            <constraint firstAttribute="width" constant="174" id="j46-PK-xR1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="v1Q-TO-b4w" firstAttribute="centerY" secondItem="xYq-sX-Szl" secondAttribute="centerY" id="0Jf-eR-5fc"/>
+                                    <constraint firstAttribute="height" constant="52" id="5hi-y1-nqi"/>
+                                    <constraint firstItem="FYO-kk-UQt" firstAttribute="leading" secondItem="xYq-sX-Szl" secondAttribute="leading" constant="8" id="Chf-zB-3TR"/>
+                                    <constraint firstItem="FYO-kk-UQt" firstAttribute="centerY" secondItem="xYq-sX-Szl" secondAttribute="centerY" id="LLF-Cu-mBd"/>
+                                    <constraint firstItem="v1Q-TO-b4w" firstAttribute="leading" secondItem="FYO-kk-UQt" secondAttribute="trailing" constant="31" id="bOy-gN-o4B"/>
+                                    <constraint firstAttribute="width" constant="375" id="heb-xV-ilH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPD-ae-GEZ">
+                                <rect key="frame" x="8" y="80" width="359" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EfS-x9-d48"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ux0-dk-qt7">
+                                <rect key="frame" x="129" y="323.5" width="117.5" height="19"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.094117647060000004" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93333333330000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xYq-sX-Szl" firstAttribute="top" secondItem="udC-7V-RW7" secondAttribute="bottom" id="7oV-as-Fr3"/>
+                            <constraint firstItem="mPD-ae-GEZ" firstAttribute="top" secondItem="xYq-sX-Szl" secondAttribute="bottom" constant="8" id="8VR-zG-3in"/>
+                            <constraint firstAttribute="trailing" secondItem="xYq-sX-Szl" secondAttribute="trailing" id="Dco-FL-bgU"/>
+                            <constraint firstItem="xYq-sX-Szl" firstAttribute="centerX" secondItem="CCz-MP-bYz" secondAttribute="centerX" id="Ku3-xp-LP2"/>
+                            <constraint firstItem="ux0-dk-qt7" firstAttribute="centerX" secondItem="CCz-MP-bYz" secondAttribute="centerX" id="TAV-ln-hD7"/>
+                            <constraint firstAttribute="trailing" secondItem="mPD-ae-GEZ" secondAttribute="trailing" constant="8" id="TnN-aj-26o"/>
+                            <constraint firstItem="ux0-dk-qt7" firstAttribute="centerY" secondItem="CCz-MP-bYz" secondAttribute="centerY" id="gni-G8-26U"/>
+                            <constraint firstItem="mPD-ae-GEZ" firstAttribute="leading" secondItem="CCz-MP-bYz" secondAttribute="leading" constant="8" id="xaN-ZD-wOf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Djm-YD-74I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6305" y="692"/>
         </scene>
     </scenes>
     <resources>

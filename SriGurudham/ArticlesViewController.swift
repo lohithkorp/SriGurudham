@@ -22,6 +22,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
     var screenHeight: CGFloat!
     
     var articleImages: [String]!
+    var articleImagesData = [Data]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,10 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
         screenWidth = screenSize.width
         screenHeight = screenSize.height
         
+        self.fetchArticlesData()
+    }
+    
+    func fetchArticlesData() {
         let urlString = "http://srigurudham.org/articles"
         
         if let url = URL(string: urlString) {
@@ -51,8 +56,23 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
                     
                     self.articleImages = srcsStringArray
                     
+                    for i in 0..<self.articleImages.count {
+                    
+                        let myURL = URL(string: articleImages[i])
+                        
+                        let articleImage = try? Data(contentsOf: myURL!)
+                        
+                        if let articleImage = articleImage {
+                            articleImagesData.append(articleImage)
+                            UserDefaults.standard.setValue(articleImagesData, forKey: "cahcedArticleImages")
+                        }
+                        else {
+                            let cachedArticleImages = UserDefaults.standard.array(forKey: "cahcedArticleImages")
+                            articleImagesData = cachedArticleImages as! [Data]
+                        }
+                    }
                     collectionView.reloadData()
-
+                    
                 }catch Exception.Error(let type, let message){
                     print(message)
                 }catch{
@@ -60,7 +80,9 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 }
                 
             } catch {
-                //TODO:- ALERT saying could not reach servers!\
+                print("servers not reachable")
+                let cachedArticleImages = UserDefaults.standard.array(forKey: "cahcedArticleImages")
+                articleImagesData = cachedArticleImages as! [Data]
             }
         }
             
@@ -80,7 +102,13 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return articleImages.count
+        if articleImagesData.count > 0 {
+            return (articleImagesData.count)
+        }
+        
+        else {
+            return 0
+        }
     }
     
     
@@ -88,12 +116,8 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let collectionViewCell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "ArticlesCollectionViewCell", for: indexPath) as! ArticlesCollectionViewCell
         
-        let myURL = URL(string: articleImages[indexPath.row])
-        
-        let articleImage = try? Data(contentsOf: myURL!)
-        
-        if let articleImage = articleImage {
-            collectionViewCell.articleImage.image = UIImage(data: articleImage)
+        if articleImagesData.count > 0 {
+            collectionViewCell.articleImage.image = UIImage(data: articleImagesData[indexPath.row])
         }
         
         return collectionViewCell
@@ -102,7 +126,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let articleDetailVc = storyboard?.instantiateViewController(withIdentifier: "ArticleDetailViewController") as! ArticleDetailViewController
-        articleDetailVc.urlString = articleImages[indexPath.row]
+        articleDetailVc.articleImage = articleImagesData[indexPath.row]
         let navigationController = UINavigationController(rootViewController: articleDetailVc)
         self.present(navigationController, animated: true, completion: nil)
         

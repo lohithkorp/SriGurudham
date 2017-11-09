@@ -12,19 +12,13 @@ class ArticleDetailViewController: UIViewController {
 
     @IBOutlet weak var articleDetailImageView: UIImageView!
     
-    var urlString: String?
+    var articleImage: Data?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let urlString = urlString {
-            if let myURL = URL(string: urlString) {
-                let articleImage = try? Data(contentsOf: myURL)
-                
-                if let articleImage = articleImage {
-                    articleDetailImageView.image = UIImage(data: articleImage)
-                }
-            }
+        if let articleImage = articleImage {
+            articleDetailImageView.image = UIImage(data: articleImage)
         }
         
         self.navigationItem.leftBarButtonItem = nil

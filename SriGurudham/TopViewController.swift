@@ -12,8 +12,6 @@ class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
 
     @IBAction func showMenuButtonAction(_ sender: AnyObject) {

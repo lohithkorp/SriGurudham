@@ -124,9 +124,28 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "GuruvuGaruViewController")
             case 2:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ScheduleDetailViewController")
+            case 3:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "AudioViewController")
+                
+            case 4:
+                
+                let youtubeChannel =  "UCdUkunZAXBBCs772N55W_ow"
+                let appURL = NSURL(string: "youtube://www.youtube.com/channel/\(youtubeChannel)")!
+                let webURL = NSURL(string: "https://www.youtube.com/channel/\(youtubeChannel)")!
+                let application = UIApplication.shared
+                
+                if application.canOpenURL(appURL as URL) {
+                    application.openURL(appURL as URL)
+                } else {
+                    // if Youtube app is not installed, open URL inside Safari
+                    application.openURL(webURL as URL)
+                }
                 
             case 6:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ArticlesViewController")
+            
+            case 7:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ServicesViewController")
                 
             case 8:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ContactViewController")
@@ -136,6 +155,30 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             
             self.so_containerViewController?.isSideViewControllerPresented = false
+            
+        case 2:
+            switch indexPath.row {
+            case 0:
+                let activityViewController = UIActivityViewController(activityItems:
+                    ["Whatever you want to share!"], applicationActivities: nil)
+                let excludeActivities = [
+                    UIActivityType.message,
+                    UIActivityType.mail,
+                    UIActivityType.print,
+                    UIActivityType.copyToPasteboard,
+                    UIActivityType.assignToContact,
+                    UIActivityType.saveToCameraRoll,
+                    UIActivityType.addToReadingList,
+                    UIActivityType.postToFlickr,
+                    UIActivityType.postToTencentWeibo,
+                    UIActivityType.airDrop]
+                activityViewController.excludedActivityTypes = excludeActivities;
+                
+                present(activityViewController, animated: true,
+                                      completion: nil)
+            default:
+                break
+            }
             
         default:
             break

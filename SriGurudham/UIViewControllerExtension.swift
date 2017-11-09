@@ -42,8 +42,13 @@ extension UIViewController {
                 }
                 
             } catch {
-                //TODO:- ALERT saying could not reach servers!
-                return ""
+                if let cachedTextData = UserDefaults.standard.string(forKey: classId) {
+                    return cachedTextData
+                }
+                else {
+                    return ""
+                    showServiceAlert()
+                }
             }
         }
         
@@ -51,5 +56,19 @@ extension UIViewController {
             print("URL was bad")
             return ""
         }
+    }
+    
+    func showServiceAlert() {
+        DispatchQueue.main.async(execute: {
+            let alert = UIAlertView(title: "Sri Gurudham", message: "Could not reach servers at the moment. Please try again", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+        })
+    }
+    
+    func showInternetConnectivityAlert() {
+        DispatchQueue.main.async(execute: {
+            let alert = UIAlertView(title: "Sri Gurudham", message: "Your device is not Connected to the Internet.", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+        })
     }
 }
