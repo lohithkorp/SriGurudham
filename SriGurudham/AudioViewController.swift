@@ -10,8 +10,18 @@ import UIKit
 
 class AudioViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let urlString = "https://soundcloud.com/search?q=sri%20gurudham"
+        let myUrl = URL(string: urlString)
+        
+        if let myUrl = myUrl {
+            let urlRequest = URLRequest(url: myUrl)
+            webView.loadRequest(urlRequest)
+        }
     }
     
     @IBAction func sideMenuButtonAction(_ sender: Any) {
