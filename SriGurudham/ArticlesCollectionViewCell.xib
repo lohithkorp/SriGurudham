@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,16 +18,16 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-rG-3TI">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                        <rect key="frame" x="8" y="8" width="134" height="184"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="YLt-rG-3TI" secondAttribute="bottom" id="3Qs-AT-dSA"/>
+                <constraint firstAttribute="bottom" secondItem="YLt-rG-3TI" secondAttribute="bottom" constant="8" id="3Qs-AT-dSA"/>
                 <constraint firstItem="YLt-rG-3TI" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5Fb-4V-lLu"/>
-                <constraint firstItem="YLt-rG-3TI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7r8-VZ-0l3"/>
-                <constraint firstAttribute="trailing" secondItem="YLt-rG-3TI" secondAttribute="trailing" id="DIR-il-PYi"/>
-                <constraint firstItem="YLt-rG-3TI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FCf-sh-R0J"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7r8-VZ-0l3"/>
+                <constraint firstAttribute="trailing" secondItem="YLt-rG-3TI" secondAttribute="trailing" constant="8" id="DIR-il-PYi"/>
+                <constraint firstItem="YLt-rG-3TI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="FCf-sh-R0J"/>
                 <constraint firstItem="YLt-rG-3TI" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="h6t-kh-Vwz"/>
             </constraints>
             <connections>

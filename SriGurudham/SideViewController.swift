@@ -140,6 +140,9 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
                     // if Youtube app is not installed, open URL inside Safari
                     application.openURL(webURL as URL)
                 }
+            
+            case 5:
+                self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "PhotosViewController")
                 
             case 6:
                 self.so_containerViewController?.topViewController = myStoryboard.instantiateViewController(withIdentifier: "ArticlesViewController")

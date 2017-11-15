@@ -134,7 +134,7 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-        let collectionCellWidth = (screenWidth - (CGFloat(kLoadColumnsPerRow + 1.0) * kLoadSpan))/CGFloat(kLoadColumnsPerRow) - 1
+        let collectionCellWidth = (screenWidth - (CGFloat(kLoadColumnsPerRow) * kLoadSpan))/CGFloat(kLoadColumnsPerRow) - 1
         
         return CGSize(width: collectionCellWidth , height: collectionCellWidth)
     }
