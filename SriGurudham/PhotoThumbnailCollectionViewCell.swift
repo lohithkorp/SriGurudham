@@ -9,6 +9,10 @@
 import UIKit
 
 class PhotoThumbnailCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var thumbnailImage: UIImageView!
+    
+    @IBOutlet weak var thumbnailDescription: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         

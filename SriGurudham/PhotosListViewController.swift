@@ -1,17 +1,21 @@
 //
-//  PhotosViewController.swift
+//  PhotosListViewController.swift
 //  SriGurudham
 //
-//  Created by Lohith Krishna Korupolu on 14/11/2017.
+//  Created by Lohith Krishna Korupolu on 17/11/2017.
 //  Copyright © 2017 Sri Gurudham. All rights reserved.
 //
 
 import UIKit
 import SwiftSoup
 
-class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class PhotosListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    var photoAlbumName: String?
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var thumbnailImages = [String]()
+    var thumbnailImagesData = [Data]()
     
     let kLoadColumnsPerRow = 2.0
     let kLoadSpan:CGFloat = 26.0
@@ -21,38 +25,46 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
     
-    var thumbnailImages = [String]()
-    var thumbnailTitles = [String]()
-    var albumLinks = [String]()
-    var thumbnailImagesData = [Data]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let photoThumbnailViewCell = UINib(nibName: "PhotoThumbnailCollectionViewCell", bundle: nil)
-        self.collectionView.register(photoThumbnailViewCell, forCellWithReuseIdentifier: "PhotoThumbnailCollectionViewCell")
-        self.collectionView.dataSource = self
+        print("Selected Album \(photoAlbumName)")
+        
         self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        
+        let photoListThumbnailViewCell = UINib(nibName: "PhotoListThumbnailCollectionViewCell", bundle: nil)
+        self.collectionView.register(photoListThumbnailViewCell, forCellWithReuseIdentifier: "PhotoListThumbnailCollectionViewCell")
+        
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.title = "Sri Gurudham"
+        
+        let button =  UIButton(type: .custom)
+        button.setImage(UIImage(named: "IconBack"), for: UIControlState())
+        button.addTarget(self, action: #selector(backAction), for: UIControlEvents.touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        button.imageEdgeInsets = UIEdgeInsetsMake(0, -60, 0, -32)//move image to the right
+        let barButton = UIBarButtonItem(customView: button)
+        self.navigationItem.leftBarButtonItem = barButton
+        
+        self.fetchPhotosList(albumName: photoAlbumName!)
         
         screenSize = UIScreen.main.bounds
         screenWidth = screenSize.width
         screenHeight = screenSize.height
-        
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        self.fetchPhotosData()
     }
     
-    func fetchPhotosData() {
+    func fetchPhotosList(albumName: String) {
         
         if thumbnailImages.count > 0 && thumbnailImagesData.count > 0 {
-            thumbnailImages.removeAll()
             thumbnailImagesData.removeAll()
+            thumbnailImages.removeAll()
         }
         
-        let urlString = "http://srigurudham.org/photos"
-        if let url = URL(string: urlString) {
+        let urlString = "http://srigurudham.org/\(albumName)"
+        let percentEncodedUrlString = urlString.replacingOccurrences(of: " ", with: "%20")
+        
+        if let url = URL(string: percentEncodedUrlString) {
             do {
                 let contents = try String(contentsOf: url)
                 
@@ -63,13 +75,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
                     let srcs: Elements = try doc.getElementsByClass("thumbnail").select("img[src]")
                     
                     let srcsStringArray: [String] = srcs.array().map { try! $0.attr("src").description }
-                    
-                    thumbnailTitles = srcs.array().map { try! $0.attr("alt").description }
-                    
-                    
-                    let albumLinkSrcs: Elements = try doc.getElementsByClass("title").select("a[href]")
-                    
-                    albumLinks = albumLinkSrcs.array().map { try! $0.attr("href").description }
                     
                     let httpArray: [String] = srcsStringArray.map { $0.replacingOccurrences(of: "https", with: "http")}
                     
@@ -85,10 +90,10 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
                         
                         if let thumbnailImage = thumbnailImage {
                             thumbnailImagesData.append(thumbnailImage)
-                            UserDefaults.standard.setValue(thumbnailImagesData, forKey: "cahcedThumbnailImages")
+                            UserDefaults.standard.setValue(thumbnailImagesData, forKey: "\(photoAlbumName!)")
                         }
                         else {
-                            let cachedArticleImages = UserDefaults.standard.array(forKey: "cahcedThumbnailImages")
+                            let cachedArticleImages = UserDefaults.standard.array(forKey: "\(photoAlbumName!)")
                             thumbnailImagesData = cachedArticleImages as! [Data]
                         }
                     }
@@ -102,7 +107,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
                 
             } catch {
                 print("servers not reachable")
-                let cachedThumbnailImages = UserDefaults.standard.array(forKey: "cahcedThumbnailImages")
+                let cachedThumbnailImages = UserDefaults.standard.array(forKey: "cachedPhotosListImages")
                 thumbnailImagesData = cachedThumbnailImages as! [Data]
             }
         }
@@ -112,12 +117,13 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
     }
     
-    
-    @IBAction func sideMenuButtonAction(_ sender: Any) {
-        if let container = self.so_containerViewController {
-            container.isSideViewControllerPresented = true
-        }
+    @IBAction func backAction(_ sender: UIButton) {
+        let presentingViewController = self.presentingViewController
+        self.dismiss(animated: false, completion: {
+            presentingViewController!.dismiss(animated: true, completion: {})
+        })
     }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -136,11 +142,10 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let collectionViewCell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoThumbnailCollectionViewCell", for: indexPath) as! PhotoThumbnailCollectionViewCell
+        let collectionViewCell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoListThumbnailCollectionViewCell", for: indexPath) as! PhotoListThumbnailCollectionViewCell
         
-        if thumbnailImagesData.count > 0 && thumbnailTitles.count > 0 {
-            collectionViewCell.thumbnailImage.image = UIImage(data: thumbnailImagesData[indexPath.row])
-            collectionViewCell.thumbnailDescription.text = thumbnailTitles[indexPath.row]
+        if thumbnailImagesData.count > 0 {
+            collectionViewCell.photoListThumbnail.image = UIImage(data: thumbnailImagesData[indexPath.row])
         }
         
         return collectionViewCell
@@ -148,11 +153,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let photosListVc = storyboard?.instantiateViewController(withIdentifier: "PhotosListViewController") as! PhotosListViewController
-        photosListVc.photoAlbumName = albumLinks[indexPath.row]
         
-        let navigationController = UINavigationController(rootViewController: photosListVc)
-        self.present(navigationController, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
@@ -180,5 +181,4 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         return UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
     }
-    
 }

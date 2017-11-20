@@ -11,34 +11,36 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PhotoThumbnailCollectionViewCell" reuseIdentifier="PhotoThumbnailCollectionViewCell" id="gTV-IL-0wX" customClass="PhotoThumbnailCollectionViewCell" customModule="SriGurudham" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-nc-pSO">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="156"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-ZU-T5t">
-                                <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhM-ZU-T5t">
+                                <rect key="frame" x="5" y="5" width="140" height="146"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hhM-ZU-T5t" secondAttribute="trailing" id="8eS-gl-o3V"/>
-                            <constraint firstItem="hhM-ZU-T5t" firstAttribute="leading" secondItem="8Hv-nc-pSO" secondAttribute="leading" id="ImQ-pu-Pws"/>
-                            <constraint firstItem="hhM-ZU-T5t" firstAttribute="top" secondItem="8Hv-nc-pSO" secondAttribute="top" id="rS2-41-Llg"/>
-                            <constraint firstAttribute="bottom" secondItem="hhM-ZU-T5t" secondAttribute="bottom" id="v39-fd-IcL"/>
+                            <constraint firstAttribute="trailing" secondItem="hhM-ZU-T5t" secondAttribute="trailing" constant="5" id="8eS-gl-o3V"/>
+                            <constraint firstItem="hhM-ZU-T5t" firstAttribute="leading" secondItem="8Hv-nc-pSO" secondAttribute="leading" constant="5" id="ImQ-pu-Pws"/>
+                            <constraint firstItem="hhM-ZU-T5t" firstAttribute="top" secondItem="8Hv-nc-pSO" secondAttribute="top" constant="5" id="rS2-41-Llg"/>
+                            <constraint firstAttribute="bottom" secondItem="hhM-ZU-T5t" secondAttribute="bottom" constant="5" id="v39-fd-IcL"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57w-Iv-Usd">
-                        <rect key="frame" x="0.0" y="133" width="120" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57w-Iv-Usd">
+                        <rect key="frame" x="0.0" y="156" width="150" height="44"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.42352941179999998" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="17" id="Rhg-Kd-Mlz"/>
+                            <constraint firstAttribute="height" constant="44" id="AFY-H8-9KY"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -47,14 +49,15 @@
                 <constraint firstItem="57w-Iv-Usd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="19t-OO-gJK"/>
                 <constraint firstAttribute="bottom" secondItem="57w-Iv-Usd" secondAttribute="bottom" id="6Qj-RN-n8C"/>
                 <constraint firstItem="8Hv-nc-pSO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ROD-Uq-2Jl"/>
-                <constraint firstItem="57w-Iv-Usd" firstAttribute="top" secondItem="8Hv-nc-pSO" secondAttribute="bottom" constant="3" id="XMK-xq-mr5"/>
+                <constraint firstItem="57w-Iv-Usd" firstAttribute="top" secondItem="8Hv-nc-pSO" secondAttribute="bottom" id="XMK-xq-mr5"/>
                 <constraint firstItem="8Hv-nc-pSO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bLX-Gq-rdG"/>
                 <constraint firstAttribute="trailing" secondItem="57w-Iv-Usd" secondAttribute="trailing" id="uRC-mN-eZI"/>
                 <constraint firstAttribute="trailing" secondItem="8Hv-nc-pSO" secondAttribute="trailing" id="zGx-JM-xzd"/>
             </constraints>
+            <connections>
+                <outlet property="thumbnailDescription" destination="57w-Iv-Usd" id="qB6-v6-JGM"/>
+                <outlet property="thumbnailImage" destination="hhM-ZU-T5t" id="g4M-Qn-t5S"/>
+            </connections>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="slide1" width="375" height="188"/>
-    </resources>
 </document>
