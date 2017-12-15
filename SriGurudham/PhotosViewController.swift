@@ -45,7 +45,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func fetchPhotosData() {
-        
+        self.startSpinner()
         if thumbnailImages.count > 0 && thumbnailImagesData.count > 0 {
             thumbnailImages.removeAll()
             thumbnailImagesData.removeAll()
@@ -93,22 +93,27 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
                         }
                     }
                     collectionView.reloadData()
+                    self.stopSpinner()
                     
                 }catch Exception.Error(let type, let message){
                     print(message)
+                    self.stopSpinner()
                 }catch{
                     print("error")
+                    self.stopSpinner()
                 }
                 
             } catch {
                 print("servers not reachable")
                 let cachedThumbnailImages = UserDefaults.standard.array(forKey: "cahcedThumbnailImages")
                 thumbnailImagesData = cachedThumbnailImages as! [Data]
+                self.stopSpinner()
             }
         }
             
         else {
             print("URL was bad")
+            self.stopSpinner()
         }
     }
     

@@ -40,6 +40,8 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func fetchArticlesData() {
+        
+        self.startSpinner()
         let urlString = "http://srigurudham.org/articles"
         
         if let url = URL(string: urlString) {
@@ -72,22 +74,27 @@ class ArticlesViewController: UIViewController, UICollectionViewDelegate, UIColl
                         }
                     }
                     collectionView.reloadData()
+                    self.startSpinner()
                     
                 }catch Exception.Error(let type, let message){
                     print(message)
+                    self.startSpinner()
                 }catch{
                     print("error")
+                    self.startSpinner()
                 }
                 
             } catch {
                 print("servers not reachable")
                 let cachedArticleImages = UserDefaults.standard.array(forKey: "cahcedArticleImages")
                 articleImagesData = cachedArticleImages as! [Data]
+                self.startSpinner()
             }
         }
             
         else {
             print("URL was bad")
+            self.startSpinner()
         }
     }
     

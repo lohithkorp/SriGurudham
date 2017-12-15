@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
     
     let sideMenuItemList = ["Home", "Guruvugaru", "Schedule", "Audios", "Videos", "Photos", "Articles", "Services", "Contact Us"]
     
@@ -129,7 +130,7 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
             case 4:
                 
-                let youtubeChannel =  "UCdUkunZAXBBCs772N55W_ow"
+                let youtubeChannel = "UCdUkunZAXBBCs772N55W_ow"
                 let appURL = NSURL(string: "youtube://www.youtube.com/channel/\(youtubeChannel)")!
                 let webURL = NSURL(string: "https://www.youtube.com/channel/\(youtubeChannel)")!
                 let application = UIApplication.shared
@@ -179,6 +180,18 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 present(activityViewController, animated: true,
                                       completion: nil)
+            case 1:
+                let mailVC = MFMailComposeViewController()
+                
+                if MFMailComposeViewController.canSendMail() {
+                    mailVC.mailComposeDelegate = self
+                    mailVC.setToRecipients(["info@srigurudham.org", "maaguruvugaru@gmail.com"])
+                    mailVC.setSubject("Enter Subject Here..")
+                    mailVC.setMessageBody("Enter your email Here..", isHTML: false)
+                    
+                    self.present(mailVC, animated: true, completion: nil)
+                }
+                
             default:
                 break
             }
@@ -187,6 +200,5 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
             break
         }
     }
-
 }
 

@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var announcementsView: UIView!
     @IBOutlet weak var quotationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,17 +25,24 @@ class HomeViewController: UIViewController {
         self.gurujiImageView.animationImages = slideImages
         self.gurujiImageView.animationDuration = 12
         self.gurujiImageView.startAnimating()
-
+        
         UIView.animate(withDuration: 12.0, delay: 1, options: ([.curveLinear, .repeat]), animations: {() -> Void in
             self.announcementsLabel.center = CGPoint(x: 0 - self.announcementsLabel.bounds.size.width / 2, y: self.announcementsLabel.center.y)
         }, completion:  { _ in })
         
-        quotationLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org", classId: "ntr")
-        announcementsLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org/schedule", classId: "inside")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        quotationLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org", classId: "ntr", isAnnouncements: false)
+        announcementsLabel.text = self.getSriGurudhamTextData(urlString: "http://srigurudham.org/schedule", classId: "inside", isAnnouncements: true)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showScheduleVc))
-        announcementsView.addGestureRecognizer(tapGesture)
-        
+        if announcementsLabel.text == "శ్రీ హనుమ జయ హనుమ జయ శివానంద హనుమ" {
+            return
+        }
+        else {
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showScheduleVc))
+            announcementsView.addGestureRecognizer(tapGesture)
+        }
     }
     
     func showScheduleVc() {
